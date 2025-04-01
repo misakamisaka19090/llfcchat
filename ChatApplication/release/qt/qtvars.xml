@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+<Qt_DEFINES_>_WINDOWS;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB</Qt_DEFINES_>
+<Qt_INCLUDEPATH_>E:\MysoftWare\Qt\6.8.2\msvc2022_64\include;E:\MysoftWare\Qt\6.8.2\msvc2022_64\include\QtWidgets;E:\MysoftWare\Qt\6.8.2\msvc2022_64\include\QtGui;E:\MysoftWare\Qt\6.8.2\msvc2022_64\include\QtNetwork;E:\MysoftWare\Qt\6.8.2\msvc2022_64\include\QtCore;E:\MysoftWare\Qt\6.8.2\msvc2022_64\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
+<Qt_STDCPP_>stdcpp17</Qt_STDCPP_>
+<Qt_RUNTIME_>MultiThreadedDLL</Qt_RUNTIME_>
+<Qt_CL_OPTIONS_>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8</Qt_CL_OPTIONS_>
+<Qt_LIBS_>E:\MysoftWare\Qt\6.8.2\msvc2022_64\lib\Qt6Widgets.lib;E:\MysoftWare\Qt\6.8.2\msvc2022_64\lib\Qt6Gui.lib;E:\MysoftWare\Qt\6.8.2\msvc2022_64\lib\Qt6Network.lib;E:\MysoftWare\Qt\6.8.2\msvc2022_64\lib\Qt6Core.lib;E:\MysoftWare\Qt\6.8.2\msvc2022_64\lib\Qt6EntryPoint.lib;shell32.lib</Qt_LIBS_>
+<Qt_LINK_OPTIONS_>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"</Qt_LINK_OPTIONS_>
+<QMake_QT_SYSROOT_></QMake_QT_SYSROOT_>
+<QMake_QT_INSTALL_PREFIX_>E:/MysoftWare/Qt/6.8.2/msvc2022_64</QMake_QT_INSTALL_PREFIX_>
+<QMake_QT_INSTALL_ARCHDATA_>E:/MysoftWare/Qt/6.8.2/msvc2022_64</QMake_QT_INSTALL_ARCHDATA_>
+<QMake_QT_INSTALL_DATA_>E:/MysoftWare/Qt/6.8.2/msvc2022_64</QMake_QT_INSTALL_DATA_>
+<QMake_QT_INSTALL_DOCS_>E:/MysoftWare/Qt/Docs/Qt-6.8.2</QMake_QT_INSTALL_DOCS_>
+<QMake_QT_INSTALL_HEADERS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/include</QMake_QT_INSTALL_HEADERS_>
+<QMake_QT_INSTALL_LIBS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/lib</QMake_QT_INSTALL_LIBS_>
+<QMake_QT_INSTALL_LIBEXECS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/bin</QMake_QT_INSTALL_LIBEXECS_>
+<QMake_QT_INSTALL_BINS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/bin</QMake_QT_INSTALL_BINS_>
+<QMake_QT_INSTALL_TESTS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/tests</QMake_QT_INSTALL_TESTS_>
+<QMake_QT_INSTALL_PLUGINS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/plugins</QMake_QT_INSTALL_PLUGINS_>
+<QMake_QT_INSTALL_QML_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/qml</QMake_QT_INSTALL_QML_>
+<QMake_QT_INSTALL_TRANSLATIONS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/translations</QMake_QT_INSTALL_TRANSLATIONS_>
+<QMake_QT_INSTALL_CONFIGURATION_></QMake_QT_INSTALL_CONFIGURATION_>
+<QMake_QT_INSTALL_EXAMPLES_>E:/MysoftWare/Qt/Examples/Qt-6.8.2</QMake_QT_INSTALL_EXAMPLES_>
+<QMake_QT_INSTALL_DEMOS_>E:/MysoftWare/Qt/Examples/Qt-6.8.2</QMake_QT_INSTALL_DEMOS_>
+<QMake_QT_HOST_PREFIX_>E:/MysoftWare/Qt/6.8.2/msvc2022_64</QMake_QT_HOST_PREFIX_>
+<QMake_QT_HOST_DATA_>E:/MysoftWare/Qt/6.8.2/msvc2022_64</QMake_QT_HOST_DATA_>
+<QMake_QT_HOST_BINS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/bin</QMake_QT_HOST_BINS_>
+<QMake_QT_HOST_LIBEXECS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/bin</QMake_QT_HOST_LIBEXECS_>
+<QMake_QT_HOST_LIBS_>E:/MysoftWare/Qt/6.8.2/msvc2022_64/lib</QMake_QT_HOST_LIBS_>
+<QMake_QMAKE_SPEC_>win32-msvc</QMake_QMAKE_SPEC_>
+<QMake_QMAKE_XSPEC_>win32-msvc</QMake_QMAKE_XSPEC_>
+<QMake_QMAKE_VERSION_>3.1</QMake_QMAKE_VERSION_>
+<QMake_QT_VERSION_>6.8.2</QMake_QT_VERSION_>
+<QtBkup_QtHash>jZFBbsMwDAS/whfEhVEEveSgkKzKRpYEkm4QBIX//4vKhgsDvVQHXaSdJXf1FOLs4o/L+fR2GpfJvnB8Gcfl/ApYlCHOApn9XvQGd6HIbnCVvB3id8lsl6Fq+WT0QZyn7VJcSo5a5jpgwjJVSdxU3ITIZkUPlYFkTDNxDf7RaxWIthEh7TCJtgWKChuYE9baa5VCjnOIbB4yBSXQuRUycS+/y5NcNegDMC2lrum7azmy7CA0r3/oFvs2HGArj3P7SFzjr299O/xx+R2vnDgYf/8A</QtBkup_QtHash>
+    <QtVersion>6.8.2</QtVersion>
+    <QtVersionMajor>6</QtVersionMajor>
+    <QtVersionMinor>8</QtVersionMinor>
+    <QtVersionPatch>2</QtVersionPatch>
+  </PropertyGroup>
+</Project>

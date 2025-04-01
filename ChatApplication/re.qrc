@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/misaka.png</file>
+        <file>style/styleSheet.qss</file>
+    </qresource>
+</RCC>
