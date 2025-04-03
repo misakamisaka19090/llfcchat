@@ -1,11 +1,13 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
+#include <QDir>
 #include <mutex>
 #include <memory>
 #include <QStyle>
 #include <QWidget>
 #include <iostream>
+#include <QSettings>
 #include <functional>
 #include <QNetworkReply>
 #include <QRegularExpression>
@@ -25,12 +27,12 @@
 extern std::function<void(QWidget*)> repolish;
 
 /**
- * @enum ReqID
+ * @enum ReqId
  * @brief HTTP请求的ID枚举
  *
  * 用于标识不同类型的HTTP请求，帮助区分发送的请求类型。
  */
-enum ReqID {
+enum ReqId {
     ID_GET_VARIFY_CODE = 1001, /**< 获取验证码的请求 */
     ID_REG_USER = 1002         /**< 注册用户的请求 */
 };
@@ -56,5 +58,8 @@ enum ErrorCodes {
 enum Modules {
     REGISTERMOD = 0 /**< 注册模块 */
 };
+
+extern QString gate_url_prefix;
+
 
 #endif // GLOBAL_H

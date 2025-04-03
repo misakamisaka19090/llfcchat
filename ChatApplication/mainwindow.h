@@ -39,10 +39,10 @@ public slots:
     void SlotSwitchLogin();    // 槽函数：切换到登录界面
 
 private:
-	Ui::MainWindow* ui;               // 指向用户界面对象的指针
-	LoginDialog* _login_dlg;         // 指向登录对话框对象的指针
-	RegisterDialog* _register_dlg;   // 指向注册对话框对象的指针
-	QStackedWidget* _stackedWidget;  // QStackedWidget 用于切换不同界面
+    Ui::MainWindow* ui;               // 指向用户界面对象的指针
+    LoginDialog* _login_dlg;         // 指向登录对话框对象的指针
+    RegisterDialog* _register_dlg;   // 指向注册对话框对象的指针
+    QStackedWidget* _stackedWidget;  // QStackedWidget 用于切换不同界面
 };
 
 #endif // MAINWINDOW_H

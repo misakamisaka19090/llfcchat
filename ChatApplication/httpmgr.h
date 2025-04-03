@@ -34,6 +34,19 @@ public:
      */
     ~HttpMgr();
 
+    /**
+     * @brief 发送POST HTTP请求的函数
+     *
+     * @param url 目标URL
+     * @param json 需要发送的JSON对象
+     * @param req_id 请求的ID，用于标识不同的请求
+     * @param mod 模块信息，用于区分请求来源
+     *
+     * 该函数负责发送POST请求，将指定的JSON数据发送到给定的URL，并通过模块和请求ID进行区分。
+     * 成功或失败时通过信号通知其他组件处理。
+     */
+    void PostHttpReq(QUrl url, QJsonObject json, ReqId req_id, Modules mod);
+
 private:
     /**
      * @brief 私有构造函数
@@ -52,23 +65,10 @@ private:
      */
     QNetworkAccessManager _manager;
 
-    /**
-     * @brief 发送POST HTTP请求的函数
-     *
-     * @param url 目标URL
-     * @param json 需要发送的JSON对象
-     * @param req_id 请求的ID，用于标识不同的请求
-     * @param mod 模块信息，用于区分请求来源
-     *
-     * 该函数负责发送POST请求，将指定的JSON数据发送到给定的URL，并通过模块和请求ID进行区分。
-     * 成功或失败时通过信号通知其他组件处理。
-     */
-    void PostHttpReq(QUrl url, QJsonObject json, ReqID req_id, Modules mod);
-
 
 private slots:
     // 用来接收sig_http_finish信号
-	void slot_http_finish(ReqID id, QString res, ErrorCodes err, Modules mod);
+    void slot_http_finish(ReqId id, QString res, ErrorCodes err, Modules mod);
 signals:
     /**
      * @brief HTTP请求完成信号
@@ -81,18 +81,18 @@ signals:
      * @param err 错误代码（如果有）
      * @param mod 请求的模块信息
      */
-	void sig_http_finish(ReqID id, QString res, ErrorCodes err, Modules mod);
+    void sig_http_finish(ReqId id, QString res, ErrorCodes err, Modules mod);
     /**
-	 * @brief 用户注册模块HTTP请求完成信号
-	 *
-	 * 当HTTP请求在用户注册模块中完成时，发出该信号通知其他模块或组件进行后续处理。
-	 * 该信号传递请求ID、响应结果和错误代码，方便相关模块根据请求的状态执行相应操作。
-	 *
-	 * @param id 请求的ID，用于区分不同的请求。
-	 * @param res 返回的响应结果，包含服务器返回的内容。
-	 * @param err 错误代码，指示请求是否成功。如果请求失败，返回相应的错误代码。
-	 */
-    void sig_reg_mod_finish(ReqID id, QString res, ErrorCodes err);
+     * @brief 用户注册模块HTTP请求完成信号
+     *
+     * 当HTTP请求在用户注册模块中完成时，发出该信号通知其他模块或组件进行后续处理。
+     * 该信号传递请求ID、响应结果和错误代码，方便相关模块根据请求的状态执行相应操作。
+     *
+     * @param id 请求的ID，用于区分不同的请求。
+     * @param res 返回的响应结果，包含服务器返回的内容。
+     * @param err 错误代码，指示请求是否成功。如果请求失败，返回相应的错误代码。
+     */
+    void sig_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
 };
 
 #endif // HTTPMGR_H

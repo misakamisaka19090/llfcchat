@@ -8,9 +8,15 @@ class LogicSystem :public Singleton<LogicSystem>
 {
 	friend class Singleton<LogicSystem>;
 public:
-	~LogicSystem();
+	//根据路径查找并调用对应的处理函数，若未找到则返回 false
 	bool HandleGet(std::string, std::shared_ptr<HttpConnection>);
+
+	bool HandlePost(std::string, std::shared_ptr<HttpConnection>);
+
+	//注册 URL 路径与对应的 GET 请求处理函数。
 	void RegGet(std::string, HttpHandler handler);
+
+	void RegPost(std::string, HttpHandler handler);
 private:
 	LogicSystem();
 	std::map<std::string, HttpHandler> _post_handlers;

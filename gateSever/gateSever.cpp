@@ -1,11 +1,4 @@
-﻿// gateSever.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
-#include <iostream>
-#include <json/json.h>
-#include <json/value.h>
-#include <json/reader.h>
-#include "CServer.h"
+﻿#include "CServer.h"
 
 int main()
 {
@@ -22,6 +15,7 @@ int main()
 			ioc.stop();
 			});
 		std::make_shared<CServer>(ioc, port)->Start();
+		std::cout << "Gate Server listen on port" << port << std::endl;
 		ioc.run();
 	}
 	catch (std::exception const& e)
@@ -43,20 +37,3 @@ int main()
 所以对于get请求带参数的情况我们要实现参数解析，我们可以自己实现简单的url解析函数
 
 */
-
-//char 转为16进制
-unsigned char ToHex(unsigned char x)
-{
-	return  x > 9 ? x + 55 : x + 48;
-}
-
-//从16进制转为十进制的char的方法
-unsigned char FromHex(unsigned char x)
-{
-	unsigned char y;
-	if (x >= 'A' && x <= 'Z') y = x - 'A' + 10;
-	else if (x >= 'a' && x <= 'z') y = x - 'a' + 10;
-	else if (x >= '0' && x <= '9') y = x - '0';
-	else assert(0);
-	return y;
-}

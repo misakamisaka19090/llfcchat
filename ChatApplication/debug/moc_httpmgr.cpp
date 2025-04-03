@@ -40,7 +40,7 @@ static constexpr auto qt_meta_stringdata_ZN7HttpMgrE = QtMocHelpers::stringData(
     "HttpMgr",
     "sig_http_finish",
     "",
-    "ReqID",
+    "ReqId",
     "id",
     "res",
     "ErrorCodes",
@@ -95,18 +95,18 @@ Q_CONSTINIT const QMetaObject HttpMgr::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<HttpMgr, std::true_type>,
         // method 'sig_http_finish'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<ReqID, std::false_type>,
+        QtPrivate::TypeAndForceComplete<ReqId, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<ErrorCodes, std::false_type>,
         QtPrivate::TypeAndForceComplete<Modules, std::false_type>,
         // method 'sig_reg_mod_finish'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<ReqID, std::false_type>,
+        QtPrivate::TypeAndForceComplete<ReqId, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<ErrorCodes, std::false_type>,
         // method 'slot_http_finish'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<ReqID, std::false_type>,
+        QtPrivate::TypeAndForceComplete<ReqId, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<ErrorCodes, std::false_type>,
         QtPrivate::TypeAndForceComplete<Modules, std::false_type>
@@ -119,23 +119,23 @@ void HttpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     auto *_t = static_cast<HttpMgr *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->sig_http_finish((*reinterpret_cast< std::add_pointer_t<ReqID>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<Modules>>(_a[4]))); break;
-        case 1: _t->sig_reg_mod_finish((*reinterpret_cast< std::add_pointer_t<ReqID>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3]))); break;
-        case 2: _t->slot_http_finish((*reinterpret_cast< std::add_pointer_t<ReqID>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<Modules>>(_a[4]))); break;
+        case 0: _t->sig_http_finish((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<Modules>>(_a[4]))); break;
+        case 1: _t->sig_reg_mod_finish((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3]))); break;
+        case 2: _t->slot_http_finish((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<Modules>>(_a[4]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _q_method_type = void (HttpMgr::*)(ReqID , QString , ErrorCodes , Modules );
+            using _q_method_type = void (HttpMgr::*)(ReqId , QString , ErrorCodes , Modules );
             if (_q_method_type _q_method = &HttpMgr::sig_http_finish; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _q_method_type = void (HttpMgr::*)(ReqID , QString , ErrorCodes );
+            using _q_method_type = void (HttpMgr::*)(ReqId , QString , ErrorCodes );
             if (_q_method_type _q_method = &HttpMgr::sig_reg_mod_finish; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
@@ -180,14 +180,14 @@ int HttpMgr::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void HttpMgr::sig_http_finish(ReqID _t1, QString _t2, ErrorCodes _t3, Modules _t4)
+void HttpMgr::sig_http_finish(ReqId _t1, QString _t2, ErrorCodes _t3, Modules _t4)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void HttpMgr::sig_reg_mod_finish(ReqID _t1, QString _t2, ErrorCodes _t3)
+void HttpMgr::sig_reg_mod_finish(ReqId _t1, QString _t2, ErrorCodes _t3)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\gateSever.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:gateSever.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:LogicSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\HttpConnection.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:HttpConnection.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:LogicSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:LogicSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -25,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:CServer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|solutionrelative:LogicSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC3889B8-BFA6-4E25-A09F-B4C2D0C0A380}|gateSever.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\Singleton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -46,20 +42,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "gateSever.cpp",
-              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\gateSever.cpp",
-              "RelativeDocumentMoniker": "gateSever.cpp",
-              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\gateSever.cpp",
-              "RelativeToolTip": "gateSever.cpp",
-              "ViewState": "AgIAACwAAAAAAAAAAADwvz0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HttpConnection.cpp",
+              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\HttpConnection.cpp",
+              "RelativeDocumentMoniker": "HttpConnection.cpp",
+              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\HttpConnection.cpp",
+              "RelativeToolTip": "HttpConnection.cpp",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAkwLwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-01T06:31:55.593Z",
+              "WhenOpened": "2025-04-02T05:57:17.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogicSystem.cpp",
+              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.cpp",
+              "RelativeDocumentMoniker": "LogicSystem.cpp",
+              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.cpp",
+              "RelativeToolTip": "LogicSystem.cpp",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwCkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-01T06:14:57.098Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LogicSystem.h",
+              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.h",
+              "RelativeDocumentMoniker": "LogicSystem.h",
+              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.h",
+              "RelativeToolTip": "LogicSystem.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-01T04:27:53.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "const.h",
+              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\const.h",
+              "RelativeDocumentMoniker": "const.h",
+              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\const.h",
+              "RelativeToolTip": "const.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-01T14:21:28.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CServer.cpp",
+              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.cpp",
+              "RelativeDocumentMoniker": "CServer.cpp",
+              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.cpp",
+              "RelativeToolTip": "CServer.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-01T06:22:24.961Z"
             },
             {
               "$type": "Document",
@@ -69,53 +113,13 @@
               "RelativeDocumentMoniker": "HttpConnection.h",
               "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\HttpConnection.h",
               "RelativeToolTip": "HttpConnection.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-01T04:20:28.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T04:20:28.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HttpConnection.cpp",
-              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\HttpConnection.cpp",
-              "RelativeDocumentMoniker": "HttpConnection.cpp",
-              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\HttpConnection.cpp",
-              "RelativeToolTip": "HttpConnection.cpp",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-01T02:50:19.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LogicSystem.cpp",
-              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.cpp",
-              "RelativeDocumentMoniker": "LogicSystem.cpp",
-              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.cpp",
-              "RelativeToolTip": "LogicSystem.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-01T06:14:57.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CServer.cpp",
-              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.cpp",
-              "RelativeDocumentMoniker": "CServer.cpp",
-              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.cpp",
-              "RelativeToolTip": "CServer.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-01T06:22:24.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CServer.h",
               "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\CServer.h",
               "RelativeDocumentMoniker": "CServer.h",
@@ -123,38 +127,11 @@
               "RelativeToolTip": "CServer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-01T06:34:14.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "const.h",
-              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\const.h",
-              "RelativeDocumentMoniker": "const.h",
-              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\const.h",
-              "RelativeToolTip": "const.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-01T14:21:28.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T06:34:14.855Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LogicSystem.h",
-              "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.h",
-              "RelativeDocumentMoniker": "LogicSystem.h",
-              "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\LogicSystem.h",
-              "RelativeToolTip": "LogicSystem.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-01T04:27:53.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Singleton.h",
               "DocumentMoniker": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\gateSever\\Singleton.h",
               "RelativeDocumentMoniker": "Singleton.h",
@@ -162,8 +139,7 @@
               "RelativeToolTip": "Singleton.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-01T04:27:13.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T04:27:13.25Z"
             }
           ]
         }

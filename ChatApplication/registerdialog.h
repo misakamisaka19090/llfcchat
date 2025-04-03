@@ -23,15 +23,23 @@ public:
     explicit RegisterDialog(QWidget *parent = nullptr);
 
     ~RegisterDialog();
-
-private:
-    Ui::RegisterDialog *ui; ///< 界面UI对象指针
-
 signals:
     // 信号：切换到登录界面。
     void loginRegister();
 
 protected slots:
+
+private slots:
+    /**
+     * @brief 槽函数：处理点击“获取验证码”按钮的事件。
+     * 该函数会验证用户输入的邮箱地址是否合法，并在邮箱格式正确时发送验证码请求。
+     */
+    void on_getVerify_Button_clicked();
+
+    void slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
+
+private:
+    Ui::RegisterDialog *ui; ///< 界面UI对象指针
     /**
      * @brief 槽函数：显示提示信息, 在界面上显示错误或成功信息，提示信息包括文本和状态。
      *
@@ -40,14 +48,10 @@ protected slots:
      */
     void showTip(QString str, bool b_ok);
 
-private slots:
-    /**
-     * @brief 槽函数：处理点击“获取验证码”按钮的事件。
-     * 该函数会验证用户输入的邮箱地址是否合法，并在邮箱格式正确时发送验证码请求。
-     */
-	void on_getVerify_Button_clicked();
+    void initHttpHandlers();
+    //使用_handlers 根据ID取出对应的函数
+    QMap<ReqId, std::function<void(const QJsonObject&)>> _handlers;
 
-	void slot_reg_mod_finish(ReqID id, QString res, ErrorCodes err);
 };
 
 #endif // REGISTERDIALOG_H

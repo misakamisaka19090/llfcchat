@@ -12,6 +12,9 @@ public:
 private:
 	//检测超时
 	void CheckDeadline();
+
+	//get请求的参数解析
+	void PreParseGetParam();
 	//应答函数
 	void WriteResponse();
 	//请求头
@@ -28,5 +31,10 @@ private:
 
 	// The timer for putting a deadline on connection processing. 
 	net::steady_timer deadline_{
-		_socket.get_executor(), std::chrono::seconds(60) };
+		_socket.get_executor(), std::chrono::seconds(60) 
+	};
+
+	std::string _get_url;
+	std::unordered_map<std::string, std::string> _get_params;
 };
+

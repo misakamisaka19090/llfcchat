@@ -1,13 +1,4 @@
 ﻿   Qt/MSBuild: 3.3.1.1
    Qt: 6.8.2
-  Moc'ing httpmgr.h...
-  Moc'ing registerdialog.h...
-  httpmgr.cpp
-  main.cpp
-  mainwindow.cpp
-  registerdialog.cpp
-E:\MyFile\ImportantDocuments\misaka\project\C++\ChatApplication\registerdialog.cpp(32,48): warning C4100: “id”: 未引用的形参
-  moc_httpmgr.cpp
-  moc_mainwindow.cpp
-  moc_registerdialog.cpp
-  ChatApplication.vcxproj -> E:\MyFile\ImportantDocuments\misaka\project\C++\ChatApplication\bin\ChatApplication.exe
+  LINK : 没有找到 bin\\ChatApplication.exe 或上一个增量链接没有生成它；正在执行完全链接
+  ChatApplication.vcxproj -> E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\bin\ChatApplication.exe

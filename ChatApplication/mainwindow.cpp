@@ -1,19 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-/******************************************************************************
- *
- * @file       mainwindow.cpp
- * @brief      MainWindow 类的实现文件
- *
- * @details    该文件实现了 MainWindow 类的构造和析构函数，完成了登录与注册对话框的
- *             切换功能，并进行了信号与槽的连接。
- *
- * @author     misaka
- * @date       2025/03/27
- *****************************************************************************/
-
- // MainWindow 类的构造函数
+// MainWindow 类的构造函数
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)  // 调用父类构造函数
     , ui(new Ui::MainWindow)  // 初始化 UI 指针

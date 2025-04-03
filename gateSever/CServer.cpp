@@ -1,16 +1,15 @@
-#include <iostream>
-
 #include "CServer.h"
 #include "HttpConnection.h"
 
+//实现服务器的端口监听和连接管理，接受客户端连接并分配处理。
 
+
+//构造函数，初始化 io_context 和监听器 _acceptor
 CServer::CServer(boost::asio::io_context& ioc, unsigned short& port):
 _ioc(ioc), _acceptor(ioc, tcp::endpoint(tcp::v4(), port)), _socket(ioc) {
-
-
 }
 
-//监听新链接
+//启动异步监听，接受新连接并创建 HttpConnection 实例处理请求。
 void CServer::Start()
 {
 	auto self = shared_from_this();

@@ -5,9 +5,9 @@ HttpMgr::~HttpMgr() {
 
 HttpMgr::HttpMgr()
 {
-	// 连接了 `sig_http_finish` 信号和 `slot_http_finish` 槽函数
+    // 连接了 `sig_http_finish` 信号和 `slot_http_finish` 槽函数
     // 确保网络请求完成后，通过信号槽机制通知相关组件处理响应结果。
-	connect(this, &HttpMgr::sig_http_finish, this, &HttpMgr::slot_http_finish);
+    connect(this, &HttpMgr::sig_http_finish, this, &HttpMgr::slot_http_finish);
 }
 
 /**
@@ -21,7 +21,7 @@ HttpMgr::HttpMgr()
  * @param req_id 请求的ID，用于区分不同的请求。
  * @param mod 请求所属的模块，用于在信号中传递模块信息。
  */
-void HttpMgr::PostHttpReq(QUrl url, QJsonObject json, ReqID req_id, Modules mod)
+void HttpMgr::PostHttpReq(QUrl url, QJsonObject json, ReqId req_id, Modules mod)
 {
     // 创建一个HTTP POST请求，并设置请求头和请求体
     QByteArray data = QJsonDocument(json).toJson(); // 将JSON对象转换为字节数组
@@ -54,10 +54,10 @@ void HttpMgr::PostHttpReq(QUrl url, QJsonObject json, ReqID req_id, Modules mod)
     });
 }
 
-void HttpMgr::slot_http_finish(ReqID id, QString res, ErrorCodes err, Modules mod)
+void HttpMgr::slot_http_finish(ReqId id, QString res, ErrorCodes err, Modules mod)
 {
-	if (mod == Modules::REGISTERMOD) {
-		//发送信号通知指定模块http响应结束
-		emit sig_reg_mod_finish(id, res, err);
-	}
+    if (mod == Modules::REGISTERMOD) {
+        //发送信号通知指定模块http响应结束
+        emit sig_reg_mod_finish(id, res, err);
+    }
 }
