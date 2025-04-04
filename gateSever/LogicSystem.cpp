@@ -70,3 +70,4 @@ bool LogicSystem::HandlePost(std::string path, std::shared_ptr<HttpConnection> c
 	_post_handlers[path](con);
 	return true;
 }
+
