@@ -1,7 +1,9 @@
 #pragma once
 
 #include <map>
+#include <queue>
 #include <memory>
+#include <atomic>
 #include <iostream>
 #include <functional>
 #include <unordered_map>
@@ -28,6 +30,3 @@ enum ErrorCodes {
 	Error_Json = 1001,  //JsonΩ‚Œˆ¥ÌŒÛ
 	RPCFailed = 1002,  //RPC«Î«Û¥ÌŒÛ
 };
-
-class ConfigMgr;
-extern ConfigMgr gCfgMgr;

@@ -14,6 +14,4 @@ private:
 	tcp::acceptor  _acceptor;
 	//引用类型。没有拷贝和构造 
 	net::io_context& _ioc;
-	//接受对端连接的信息
-	boost::asio::ip::tcp::socket   _socket;
 };
