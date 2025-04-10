@@ -1,4 +1,20 @@
 ﻿   Qt/MSBuild: 3.3.1.1
    Qt: 6.8.2
-  LINK : 没有找到 bin\\ChatApplication.exe 或上一个增量链接没有生成它；正在执行完全链接
-  ChatApplication.vcxproj -> E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\bin\ChatApplication.exe
+  Uic'ing registerdialog.ui...
+  registerdialog.cpp
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(10,9): error C2039: "password_Edit": 不是 "Ui::RegisterDialog" 的成员
+      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
+      参见“Ui::RegisterDialog”的声明
+  
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(11,9): error C2039: "comfirm_edit": 不是 "Ui::RegisterDialog" 的成员
+      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
+      参见“Ui::RegisterDialog”的声明
+  
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(149,12): error C2039: "varify_edit": 不是 "Ui::RegisterDialog" 的成员
+      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
+      参见“Ui::RegisterDialog”的声明
+  
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(160,34): error C2039: "varify_edit": 不是 "Ui::RegisterDialog" 的成员
+      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
+      参见“Ui::RegisterDialog”的声明
+  

@@ -34,9 +34,12 @@ private slots:
      * @brief 槽函数：处理点击“获取验证码”按钮的事件。
      * 该函数会验证用户输入的邮箱地址是否合法，并在邮箱格式正确时发送验证码请求。
      */
-    void on_getVerify_Button_clicked();
+    void on_get_code_clicked();
 
     void slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
+
+
+    void on_sure_btn_clicked();
 
 private:
     Ui::RegisterDialog *ui; ///< 界面UI对象指针

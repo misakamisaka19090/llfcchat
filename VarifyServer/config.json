@@ -3,14 +3,15 @@
       "user": "15880038725@163.com",
       "pass": "PJYTs35uWPCUHBKj"
     },
-    "mysql":{
-        "host":"80.68.86.146",
-        "port":3306,
-        "passwd":123456
+    "mysql": {
+      "host": "81.68.86.146",
+      "port": 3308,
+      "passwd": "123456"
     },
     "redis":{
-        "host":"80.68.86.146",
-        "port":6379,
-        "passwd":123456
+      "host": "81.68.86.146",
+      "port": 6380,
+      "passwd": "123456"
     }
 }
+

@@ -30,23 +30,23 @@ public:
     QLabel *err_tip;
     QHBoxLayout *horizontalLayout;
     QLabel *user_label;
-    QLineEdit *user_Edit;
+    QLineEdit *user_edit;
     QHBoxLayout *horizontalLayout_2;
-    QLabel *mail_label;
-    QLineEdit *email_Edit;
+    QLabel *email_label;
+    QLineEdit *email_edit;
     QHBoxLayout *horizontalLayout_3;
-    QLabel *password_label;
-    QLineEdit *password_Edit;
+    QLabel *pass_label;
+    QLineEdit *pass_edit;
     QHBoxLayout *horizontalLayout_4;
-    QLabel *comfirmPassword_label;
-    QLineEdit *comfirmPassword_Edit;
+    QLabel *confirm_label;
+    QLineEdit *confirm_edit;
     QHBoxLayout *horizontalLayout_5;
     QLabel *verify_label;
-    QLineEdit *verify_Edit;
-    QPushButton *getVerify_Button;
+    QLineEdit *verify_edit;
+    QPushButton *get_code;
     QSpacerItem *verticalSpacer_2;
     QHBoxLayout *horizontalLayout_6;
-    QPushButton *register_Button;
+    QPushButton *sure_btn;
     QHBoxLayout *horizontalLayout_7;
     QSpacerItem *horizontalSpacer;
     QPushButton *login_Button;
@@ -84,70 +84,70 @@ public:
 
         horizontalLayout->addWidget(user_label);
 
-        user_Edit = new QLineEdit(RegisterDialog);
-        user_Edit->setObjectName("user_Edit");
-        user_Edit->setMinimumSize(QSize(0, 25));
-        user_Edit->setMaximumSize(QSize(16777215, 25));
+        user_edit = new QLineEdit(RegisterDialog);
+        user_edit->setObjectName("user_edit");
+        user_edit->setMinimumSize(QSize(0, 25));
+        user_edit->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout->addWidget(user_Edit);
+        horizontalLayout->addWidget(user_edit);
 
 
         verticalLayout->addLayout(horizontalLayout);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        mail_label = new QLabel(RegisterDialog);
-        mail_label->setObjectName("mail_label");
-        mail_label->setMinimumSize(QSize(0, 25));
-        mail_label->setMaximumSize(QSize(16777215, 25));
+        email_label = new QLabel(RegisterDialog);
+        email_label->setObjectName("email_label");
+        email_label->setMinimumSize(QSize(0, 25));
+        email_label->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_2->addWidget(mail_label);
+        horizontalLayout_2->addWidget(email_label);
 
-        email_Edit = new QLineEdit(RegisterDialog);
-        email_Edit->setObjectName("email_Edit");
-        email_Edit->setMinimumSize(QSize(0, 25));
-        email_Edit->setMaximumSize(QSize(16777215, 25));
+        email_edit = new QLineEdit(RegisterDialog);
+        email_edit->setObjectName("email_edit");
+        email_edit->setMinimumSize(QSize(0, 25));
+        email_edit->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_2->addWidget(email_Edit);
+        horizontalLayout_2->addWidget(email_edit);
 
 
         verticalLayout->addLayout(horizontalLayout_2);
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        password_label = new QLabel(RegisterDialog);
-        password_label->setObjectName("password_label");
-        password_label->setMinimumSize(QSize(0, 25));
-        password_label->setMaximumSize(QSize(16777215, 25));
-        password_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        pass_label = new QLabel(RegisterDialog);
+        pass_label->setObjectName("pass_label");
+        pass_label->setMinimumSize(QSize(0, 25));
+        pass_label->setMaximumSize(QSize(16777215, 25));
+        pass_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
-        horizontalLayout_3->addWidget(password_label);
+        horizontalLayout_3->addWidget(pass_label);
 
-        password_Edit = new QLineEdit(RegisterDialog);
-        password_Edit->setObjectName("password_Edit");
-        password_Edit->setMinimumSize(QSize(0, 25));
-        password_Edit->setMaximumSize(QSize(16777215, 25));
+        pass_edit = new QLineEdit(RegisterDialog);
+        pass_edit->setObjectName("pass_edit");
+        pass_edit->setMinimumSize(QSize(0, 25));
+        pass_edit->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_3->addWidget(password_Edit);
+        horizontalLayout_3->addWidget(pass_edit);
 
 
         verticalLayout->addLayout(horizontalLayout_3);
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        comfirmPassword_label = new QLabel(RegisterDialog);
-        comfirmPassword_label->setObjectName("comfirmPassword_label");
-        comfirmPassword_label->setMinimumSize(QSize(0, 25));
-        comfirmPassword_label->setMaximumSize(QSize(16777215, 25));
+        confirm_label = new QLabel(RegisterDialog);
+        confirm_label->setObjectName("confirm_label");
+        confirm_label->setMinimumSize(QSize(0, 25));
+        confirm_label->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_4->addWidget(comfirmPassword_label);
+        horizontalLayout_4->addWidget(confirm_label);
 
-        comfirmPassword_Edit = new QLineEdit(RegisterDialog);
-        comfirmPassword_Edit->setObjectName("comfirmPassword_Edit");
-        comfirmPassword_Edit->setMinimumSize(QSize(0, 25));
-        comfirmPassword_Edit->setMaximumSize(QSize(16777215, 25));
+        confirm_edit = new QLineEdit(RegisterDialog);
+        confirm_edit->setObjectName("confirm_edit");
+        confirm_edit->setMinimumSize(QSize(0, 25));
+        confirm_edit->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_4->addWidget(comfirmPassword_Edit);
+        horizontalLayout_4->addWidget(confirm_edit);
 
 
         verticalLayout->addLayout(horizontalLayout_4);
@@ -161,19 +161,19 @@ public:
 
         horizontalLayout_5->addWidget(verify_label);
 
-        verify_Edit = new QLineEdit(RegisterDialog);
-        verify_Edit->setObjectName("verify_Edit");
-        verify_Edit->setMinimumSize(QSize(0, 25));
-        verify_Edit->setMaximumSize(QSize(16777215, 25));
+        verify_edit = new QLineEdit(RegisterDialog);
+        verify_edit->setObjectName("verify_edit");
+        verify_edit->setMinimumSize(QSize(0, 25));
+        verify_edit->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_5->addWidget(verify_Edit);
+        horizontalLayout_5->addWidget(verify_edit);
 
-        getVerify_Button = new QPushButton(RegisterDialog);
-        getVerify_Button->setObjectName("getVerify_Button");
-        getVerify_Button->setMinimumSize(QSize(0, 25));
-        getVerify_Button->setMaximumSize(QSize(16777215, 25));
+        get_code = new QPushButton(RegisterDialog);
+        get_code->setObjectName("get_code");
+        get_code->setMinimumSize(QSize(0, 25));
+        get_code->setMaximumSize(QSize(16777215, 25));
 
-        horizontalLayout_5->addWidget(getVerify_Button);
+        horizontalLayout_5->addWidget(get_code);
 
 
         verticalLayout->addLayout(horizontalLayout_5);
@@ -184,11 +184,11 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName("horizontalLayout_6");
-        register_Button = new QPushButton(RegisterDialog);
-        register_Button->setObjectName("register_Button");
-        register_Button->setMinimumSize(QSize(100, 30));
+        sure_btn = new QPushButton(RegisterDialog);
+        sure_btn->setObjectName("sure_btn");
+        sure_btn->setMinimumSize(QSize(100, 30));
 
-        horizontalLayout_6->addWidget(register_Button);
+        horizontalLayout_6->addWidget(sure_btn);
 
 
         verticalLayout->addLayout(horizontalLayout_6);
@@ -223,12 +223,12 @@ public:
         RegisterDialog->setWindowTitle(QCoreApplication::translate("RegisterDialog", "Dialog", nullptr));
         err_tip->setText(QCoreApplication::translate("RegisterDialog", "\351\224\231\350\257\257\346\217\220\347\244\272", nullptr));
         user_label->setText(QCoreApplication::translate("RegisterDialog", "\347\224\250\346\210\267\345\220\215\357\274\232", nullptr));
-        mail_label->setText(QCoreApplication::translate("RegisterDialog", "\351\202\256\347\256\261\357\274\232", nullptr));
-        password_label->setText(QCoreApplication::translate("RegisterDialog", "\345\257\206\347\240\201\357\274\232", nullptr));
-        comfirmPassword_label->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244\345\257\206\347\240\201\357\274\232", nullptr));
+        email_label->setText(QCoreApplication::translate("RegisterDialog", "\351\202\256\347\256\261\357\274\232", nullptr));
+        pass_label->setText(QCoreApplication::translate("RegisterDialog", "\345\257\206\347\240\201\357\274\232", nullptr));
+        confirm_label->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244\345\257\206\347\240\201\357\274\232", nullptr));
         verify_label->setText(QCoreApplication::translate("RegisterDialog", "\351\252\214\350\257\201\347\240\201\357\274\232", nullptr));
-        getVerify_Button->setText(QCoreApplication::translate("RegisterDialog", "\350\216\267\345\217\226", nullptr));
-        register_Button->setText(QCoreApplication::translate("RegisterDialog", "\346\263\250\345\206\214", nullptr));
+        get_code->setText(QCoreApplication::translate("RegisterDialog", "\350\216\267\345\217\226", nullptr));
+        sure_btn->setText(QCoreApplication::translate("RegisterDialog", "\346\263\250\345\206\214", nullptr));
         login_Button->setText(QCoreApplication::translate("RegisterDialog", "\347\231\273\345\275\225", nullptr));
     } // retranslateUi
 

@@ -304,6 +304,13 @@ release/moc_httpmgr.cpp: ../../httpmgr.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -374,6 +381,8 @@ release/moc_httpmgr.cpp: ../../httpmgr.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qpromise.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
@@ -817,9 +826,18 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
@@ -1060,9 +1078,18 @@ release/moc_registerdialog.cpp: ../../registerdialog.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
@@ -1105,10 +1132,9 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 release/global.o: ../../global.cpp ../../global.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcompare.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qglobal.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtversionchecks.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtconfiginclude.h \
@@ -1154,24 +1180,15 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtresource.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qttranslation.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qversiontagging.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtgui-config.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qnamespace.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcompare.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcomparehelpers.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtmetamacros.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfunctionaltools_impl.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qstring.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qchar.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qstringview.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qbytearray.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qrefcount.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qnamespace.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtmetamacros.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qarraydata.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qpair.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qarraydatapointer.h \
@@ -1192,6 +1209,14 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qstringbuilder.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qstringconverter.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qstringconverter_base.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qiodevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qiodevicebase.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobject.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfunctionaltools_impl.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qlist.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qhashfunctions.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qiterator.h \
@@ -1203,7 +1228,6 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qscopedpointer.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qmetatype.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdatastream.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qiodevicebase.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfloat16.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qmath.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qiterable.h \
@@ -1213,9 +1237,35 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qscopeguard.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qobject_impl.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qbindingstorage.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdatetime.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcalendar.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qvariant.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdebug.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtextstream.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcontiguouscache.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qshareddata.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qmap.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qshareddata_impl.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qset.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qhash.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtgui-config.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qrect.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qmargins.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/q23utility.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsize.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qpoint.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qicon.h \
@@ -1226,7 +1276,6 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qcolor.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qrgb.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qrgba64.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qshareddata.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qimage.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qpixelformat.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qtransform.h \
@@ -1242,17 +1291,6 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qwidget.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qaction.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qkeysequence.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qvariant.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdebug.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtextstream.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcontiguouscache.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsharedpointer_impl.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qmap.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qshareddata_impl.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qset.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qhash.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qfont.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qendian.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qfontmetrics.h \
@@ -1260,7 +1298,6 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qcursor.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qbitmap.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qevent.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qiodevice.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qurl.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qeventpoint.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qvector2d.h \
@@ -1294,8 +1331,9 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qexception.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qpromise.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qlocale.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
@@ -1321,8 +1359,6 @@ release/global.o: ../../global.cpp ../../global.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslerror.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslcertificate.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcryptographichash.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdatetime.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qcalendar.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qssl.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QFlags \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
@@ -1492,6 +1528,13 @@ release/httpmgr.o: ../../httpmgr.cpp ../../httpmgr.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1562,6 +1605,8 @@ release/httpmgr.o: ../../httpmgr.cpp ../../httpmgr.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qpromise.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
@@ -2028,9 +2073,18 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
@@ -2038,8 +2092,6 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QRegularExpression \
 		../../singleton.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QFile \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
-		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QApplication \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
@@ -2282,9 +2334,18 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
@@ -2531,9 +2592,18 @@ release/registerdialog.o: ../../registerdialog.cpp ../../registerdialog.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QMetaType \
 		../../global.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QDir \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdir.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfile.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qtimezone.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QStyle \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtWidgets/QWidget \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
+		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/qsettings.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/QNetworkReply \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtNetwork/qnetworkreply.h \
 		E:/MysoftWare/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\ChatApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BDB6635-A867-3A6C-8EDA-F2785448D13B}|ChatApplication.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\ChatApplication\\registerdialog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0BDB6635-A867-3A6C-8EDA-F2785448D13B}|ChatApplication.vcxproj|solutionrelative:registerdialog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BB3B1858-132C-3164-AE83-986FF3FBC3E2}|ChatApplication.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\ChatApplication\\registerdialog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB3B1858-132C-3164-AE83-986FF3FBC3E2}|ChatApplication.vcxproj|solutionrelative:registerdialog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BDB6635-A867-3A6C-8EDA-F2785448D13B}|ChatApplication.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\ChatApplication\\httpmgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0BDB6635-A867-3A6C-8EDA-F2785448D13B}|ChatApplication.vcxproj|solutionrelative:httpmgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BB3B1858-132C-3164-AE83-986FF3FBC3E2}|ChatApplication.vcxproj|E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\ChatApplication\\httpmgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB3B1858-132C-3164-AE83-986FF3FBC3E2}|ChatApplication.vcxproj|solutionrelative:httpmgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "registerdialog.cpp",
               "ToolTip": "E:\\MyFile\\ImportantDocuments\\misaka\\project\\C\u002B\u002B\\llfcchat\\ChatApplication\\registerdialog.cpp",
               "RelativeToolTip": "registerdialog.cpp",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvxgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwKUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-29T09:18:46.538Z",
               "EditorCaption": ""

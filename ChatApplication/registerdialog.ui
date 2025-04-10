@@ -91,7 +91,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="user_Edit">
+        <widget class="QLineEdit" name="user_edit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -111,7 +111,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLabel" name="mail_label">
+        <widget class="QLabel" name="email_label">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -130,7 +130,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="email_Edit">
+        <widget class="QLineEdit" name="email_edit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -150,7 +150,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QLabel" name="password_label">
+        <widget class="QLabel" name="pass_label">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -172,7 +172,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="password_Edit">
+        <widget class="QLineEdit" name="pass_edit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -192,7 +192,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
-        <widget class="QLabel" name="comfirmPassword_label">
+        <widget class="QLabel" name="confirm_label">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -211,7 +211,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="comfirmPassword_Edit">
+        <widget class="QLineEdit" name="confirm_edit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -250,7 +250,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="verify_Edit">
+        <widget class="QLineEdit" name="verify_edit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -266,7 +266,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="getVerify_Button">
+        <widget class="QPushButton" name="get_code">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -302,7 +302,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
        <item>
-        <widget class="QPushButton" name="register_Button">
+        <widget class="QPushButton" name="sure_btn">
          <property name="minimumSize">
           <size>
            <width>100</width>
