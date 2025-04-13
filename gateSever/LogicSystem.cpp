@@ -3,6 +3,7 @@
 #include "VarifyGrpcClient.h"
 
 #include "RedisMgr.h"
+#include "MysqlMgr.h"
 
 //处理 HTTP GET 请求的业务逻辑，实现路由注册和请求分发。
 
@@ -71,10 +72,11 @@ LogicSystem::LogicSystem() {
 		}
 
 
-		auto email = src_root["email"];
+		auto email = src_root["email"].asString();
 		auto name = src_root["user"].asString();
 		auto pwd = src_root["passwd"].asString();
 		auto confirm = src_root["confirm"].asString();
+		auto icon = src_root["icon"].asString();
 
 		//先查找redis中email对应的验证码是否合理
 		std::string  varify_code;
@@ -95,10 +97,21 @@ LogicSystem::LogicSystem() {
 			return true;
 		}
 
+
 		//查找数据库判断用户是否存在
+		int uid = MysqlMgr::GetInstance()->RegUser(name, email, pwd, icon);
+		if (uid == 0 || uid == -1) {
+			std::cout << " user or email exist" << std::endl;
+			root["error"] = ErrorCodes::UserExist;
+			std::string jsonstr = root.toStyledString();
+			beast::ostream(connection->_response.body()) << jsonstr;
+			return true;
+		}
+
 
 		root["error"] = 0;
 		root["email"] = email;
+		root["uid"] = uid;
 		root["user"] = name;
 		root["passwd"] = pwd;
 		root["confirm"] = confirm;

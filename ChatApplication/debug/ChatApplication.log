@@ -1,20 +1,24 @@
-﻿   Qt/MSBuild: 3.3.1.1
+﻿  Generate moc_predefs.h
+   Qt/MSBuild: 3.3.1.1
+  Reading Qt configuration (E:/MysoftWare/Qt/6.8.2/msvc2022_64/bin/qmake)
    Qt: 6.8.2
+  Uic'ing logindialog.ui...
+  Uic'ing mainwindow.ui...
   Uic'ing registerdialog.ui...
+  Rcc'ing re.qrc...
+  Moc'ing httpmgr.h...
+  Moc'ing logindialog.h...
+  Moc'ing mainwindow.h...
+  Moc'ing registerdialog.h...
+  global.cpp
+  httpmgr.cpp
+  logindialog.cpp
+  main.cpp
+  mainwindow.cpp
   registerdialog.cpp
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(10,9): error C2039: "password_Edit": 不是 "Ui::RegisterDialog" 的成员
-      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
-      参见“Ui::RegisterDialog”的声明
-  
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(11,9): error C2039: "comfirm_edit": 不是 "Ui::RegisterDialog" 的成员
-      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
-      参见“Ui::RegisterDialog”的声明
-  
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(149,12): error C2039: "varify_edit": 不是 "Ui::RegisterDialog" 的成员
-      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
-      参见“Ui::RegisterDialog”的声明
-  
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\registerdialog.cpp(160,34): error C2039: "varify_edit": 不是 "Ui::RegisterDialog" 的成员
-      E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ui_registerdialog.h(238,11):
-      参见“Ui::RegisterDialog”的声明
-  
+  qrc_re.cpp
+  moc_httpmgr.cpp
+  moc_logindialog.cpp
+  moc_mainwindow.cpp
+  moc_registerdialog.cpp
+  ChatApplication.vcxproj -> E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\bin\ChatApplication.exe
