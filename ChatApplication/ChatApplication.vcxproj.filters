@@ -65,6 +65,12 @@
     <ClCompile Include="registerdialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="timerbtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clickedlabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global.h">
@@ -117,6 +123,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\ChatApplication\ChatApplication_resource.rc" />
+    <ResourceCompile Include=".\ChatApplication_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="timerbtn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clickedlabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

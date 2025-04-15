@@ -38,8 +38,9 @@ private slots:
 
     void slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
 
-
     void on_sure_btn_clicked();
+
+    void on_return_btn_clicked();
 
 private:
     Ui::RegisterDialog *ui; ///< 界面UI对象指针
@@ -51,10 +52,28 @@ private:
      */
     void showTip(QString str, bool b_ok);
 
+    void AddTipErr(TipErr te, QString tips);
+    void DelTipErr(TipErr te);
+
+    bool checkUserValid();
+    bool checkPassValid();
+    bool checkEmailValid();
+    bool checkConfirmValid();
+    bool checkVerifyValid();
+
+    //启动定时器
+    void ChangeTipPage();
+
     void initHttpHandlers();
     //使用_handlers 根据ID取出对应的函数
     QMap<ReqId, std::function<void(const QJsonObject&)>> _handlers;
+    QMap<TipErr, QString> _tip_errs;
 
+    QTimer * _countdown_timer;
+    int _countdown;
+
+signals:
+    void sigSwitchLogin();
 };
 
 #endif // REGISTERDIALOG_H

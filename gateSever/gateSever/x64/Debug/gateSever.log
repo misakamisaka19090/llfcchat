@@ -1,42 +1,17 @@
-﻿  AsioIOServicePool.cpp
+﻿  LogicSystem.cpp
   Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
   - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
   - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
   Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-  ConfigMgr.cpp
-  CServer.cpp
-  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
-  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
-  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
-  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-  gateSever.cpp
-  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
-  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
-  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
-  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\gateSever.cpp(56,13): warning C4244: “初始化”: 从“PORT_LONGLONG”转换到“int”，可能丢失数据
-  HttpConnection.cpp
-  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
-  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
-  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
-  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-  LogicSystem.cpp
-  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
-  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
-  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
-  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(52,16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(59,16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“LogicSystem.cpp”)
   
-  message.grpc.pb.cc
-  message.pb.cc
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\message.pb.cc(408,67): warning C4244: “=”: 从“google::protobuf::uint64”转换到“google::protobuf::int32”，可能丢失数据
   MysqlDao.cpp
   Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
   - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
   - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
   Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(52,16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(59,16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“MysqlDao.cpp”)
   
   MysqlMgr.cpp
@@ -44,29 +19,11 @@ E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(52
   - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
   - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
   Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(52,16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\MysqlDao.h(59,16): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“MysqlMgr.cpp”)
   
-  RedisMgr.cpp
-  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
-  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
-  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
-  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
-  VarifyGrpcClient.cpp
   正在生成代码...
-hiredis.lib(hiredis.obj) : warning LNK4099: 未找到 PDB“”(使用“hiredis.lib(hiredis.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-hiredis.lib(net.obj) : warning LNK4099: 未找到 PDB“”(使用“hiredis.lib(net.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-hiredis.lib(sds.obj) : warning LNK4099: 未找到 PDB“”(使用“hiredis.lib(sds.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_Error.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_Error.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_FDAPI.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_FDAPI.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
 Win32_Interop.lib(win32_rfdmap.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(win32_rfdmap.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_fdapi_crt.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_fdapi_crt.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_variadicFunctor.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_variadicFunctor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_ANSI.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_ANSI.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_RedisLog.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_RedisLog.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_Common.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_Common.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_EventLog.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_EventLog.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Win32_Interop.lib(Win32_Time.obj) : warning LNK4099: 未找到 PDB“”(使用“Win32_Interop.lib(Win32_Time.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
   gateSever.vcxproj -> E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\x64\Debug\gateSever.exe
   E:\MyFile\ImportantDocuments\misaka\project\C++\llfcchat\gateSever\config.ini
   复制了 1 个文件

@@ -1,11 +1,15 @@
+release/clickedlabel.o
 release/global.o
 release/httpmgr.o
 release/logindialog.o
 release/main.o
 release/mainwindow.o
 release/registerdialog.o
+release/timerbtn.o
 release/qrc_re.o
+release/moc_clickedlabel.o
 release/moc_httpmgr.o
 release/moc_logindialog.o
 release/moc_mainwindow.o
 release/moc_registerdialog.o
+release/moc_timerbtn.o

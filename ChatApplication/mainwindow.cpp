@@ -16,7 +16,6 @@ MainWindow::MainWindow(QWidget* parent)
     _stackedWidget = new QStackedWidget(this);  // 创建 QStackedWidget 实例
     _stackedWidget->addWidget(_login_dlg);  // 将登录对话框添加到 QStackedWidget
     _stackedWidget->addWidget(_register_dlg);  // 将注册对话框添加到 QStackedWidget
-
     setCentralWidget(_stackedWidget);  // 设置 QStackedWidget 为中央控件
 
     // 连接 LoginDialog 的 switchRegister 信号与 MainWindow 的 SlotSwitchRegister 槽函数
@@ -24,6 +23,8 @@ MainWindow::MainWindow(QWidget* parent)
 
     // 连接 RegisterDialog 的 loginRegister 信号与 MainWindow 的 SlotSwitchLogin 槽函数
     connect(_register_dlg, &RegisterDialog::loginRegister, this, &MainWindow::SlotSwitchLogin);
+
+    connect(_register_dlg, &RegisterDialog::sigSwitchLogin, this, &MainWindow::SlotSwitchLogin);
 }
 
 // MainWindow 类的析构函数
@@ -40,7 +41,7 @@ void MainWindow::SlotSwitchRegister() {
     _stackedWidget->setCurrentWidget(_register_dlg);  // 切换到注册对话框
 }
 
-// 槽函数：切换回登录界面
+//从注册界面返回登录界面
 void MainWindow::SlotSwitchLogin() {
     _stackedWidget->setCurrentWidget(_login_dlg);  // 切换到登录对话框
 }

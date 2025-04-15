@@ -26,6 +26,12 @@
  */
 extern std::function<void(QWidget*)> repolish;
 
+
+/**
+ * @brief
+ */
+extern std::function<QString(QString)> xorString;
+
 /**
  * @enum ReqId
  * @brief HTTP请求的ID枚举
@@ -47,6 +53,21 @@ enum ErrorCodes {
     SUCCESS = 0,       /**< 操作成功 */
     ERR_JSON = 1,      /**< JSON解析失败 */
     ERR_NETWORK = 2    /**< 网络错误 */
+};
+
+enum TipErr {
+	TIP_SUCCESS = 0,     // 操作成功，无错误
+	TIP_EMAIL_ERR = 1,   // 邮箱格式错误
+	TIP_PWD_ERR = 2,     // 密码格式错误
+	TIP_CONFIRM_ERR = 3, // 确认密码为空或未填写
+	TIP_PWD_CONFIRM = 4, // 密码与确认密码不一致
+	TIP_VARIFY_ERR = 5,  // 验证码错误
+	TIP_USER_ERR = 6     // 用户名不存在或错误
+};
+
+enum ClickLbState{
+    Normal = 0,
+    Selected = 1
 };
 
 /**

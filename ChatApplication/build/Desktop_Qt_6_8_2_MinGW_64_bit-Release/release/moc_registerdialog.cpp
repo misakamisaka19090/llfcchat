@@ -41,6 +41,7 @@ static constexpr auto qt_meta_stringdata_ZN14RegisterDialogE = QtMocHelpers::str
     "RegisterDialog",
     "loginRegister",
     "",
+    "sigSwitchLogin",
     "on_get_code_clicked",
     "slot_reg_mod_finish",
     "ReqId",
@@ -48,7 +49,8 @@ static constexpr auto qt_meta_stringdata_ZN14RegisterDialogE = QtMocHelpers::str
     "res",
     "ErrorCodes",
     "err",
-    "on_sure_btn_clicked"
+    "on_sure_btn_clicked",
+    "on_return_btn_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -60,27 +62,31 @@ Q_CONSTINIT static const uint qt_meta_data_ZN14RegisterDialogE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x06,    1 /* Public */,
+       1,    0,   50,    2, 0x06,    1 /* Public */,
+       3,    0,   51,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    0,   39,    2, 0x08,    2 /* Private */,
-       4,    3,   40,    2, 0x08,    3 /* Private */,
-      10,    0,   47,    2, 0x08,    7 /* Private */,
+       4,    0,   52,    2, 0x08,    3 /* Private */,
+       5,    3,   53,    2, 0x08,    4 /* Private */,
+      11,    0,   60,    2, 0x08,    8 /* Private */,
+      12,    0,   61,    2, 0x08,    9 /* Private */,
 
  // signals: parameters
+    QMetaType::Void,
     QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 5, QMetaType::QString, 0x80000000 | 8,    6,    7,    9,
+    QMetaType::Void, 0x80000000 | 6, QMetaType::QString, 0x80000000 | 9,    7,    8,   10,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -97,6 +103,8 @@ Q_CONSTINIT const QMetaObject RegisterDialog::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<RegisterDialog, std::true_type>,
         // method 'loginRegister'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'sigSwitchLogin'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_get_code_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'slot_reg_mod_finish'
@@ -105,6 +113,8 @@ Q_CONSTINIT const QMetaObject RegisterDialog::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<ErrorCodes, std::false_type>,
         // method 'on_sure_btn_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_return_btn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -116,9 +126,11 @@ void RegisterDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->loginRegister(); break;
-        case 1: _t->on_get_code_clicked(); break;
-        case 2: _t->slot_reg_mod_finish((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3]))); break;
-        case 3: _t->on_sure_btn_clicked(); break;
+        case 1: _t->sigSwitchLogin(); break;
+        case 2: _t->on_get_code_clicked(); break;
+        case 3: _t->slot_reg_mod_finish((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<ErrorCodes>>(_a[3]))); break;
+        case 4: _t->on_sure_btn_clicked(); break;
+        case 5: _t->on_return_btn_clicked(); break;
         default: ;
         }
     }
@@ -128,6 +140,13 @@ void RegisterDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             using _q_method_type = void (RegisterDialog::*)();
             if (_q_method_type _q_method = &RegisterDialog::loginRegister; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _q_method_type = void (RegisterDialog::*)();
+            if (_q_method_type _q_method = &RegisterDialog::sigSwitchLogin; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 1;
                 return;
             }
         }
@@ -153,14 +172,14 @@ int RegisterDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }
@@ -169,5 +188,11 @@ int RegisterDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void RegisterDialog::loginRegister()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void RegisterDialog::sigSwitchLogin()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP

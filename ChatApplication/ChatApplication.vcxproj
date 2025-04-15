@@ -85,7 +85,8 @@
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
-      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -202,15 +203,19 @@
     </QtUic>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="clickedlabel.cpp" />
     <ClCompile Include="global.cpp" />
     <ClCompile Include="httpmgr.cpp" />
     <ClCompile Include="logindialog.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="registerdialog.cpp" />
+    <ClCompile Include="timerbtn.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="clickedlabel.h" />
     <ClInclude Include="global.h" />
+    <QtMoc Include="timerbtn.h" />
     <QtMoc Include="httpmgr.h" />
     <QtMoc Include="logindialog.h" />
     <QtMoc Include="mainwindow.h" />
