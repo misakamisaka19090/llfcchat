@@ -20,8 +20,8 @@
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <timerbtn.h>
 #include "clickedlabel.h"
-#include "timerbtn.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -76,7 +76,7 @@ public:
     {
         if (RegisterDialog->objectName().isEmpty())
             RegisterDialog->setObjectName("RegisterDialog");
-        RegisterDialog->resize(331, 477);
+        RegisterDialog->resize(354, 538);
         horizontalLayout_9 = new QHBoxLayout(RegisterDialog);
         horizontalLayout_9->setObjectName("horizontalLayout_9");
         verticalLayout = new QVBoxLayout();

@@ -6,15 +6,25 @@ LoginDialog::LoginDialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::LoginDialog)
 {
-    // 初始化 UI 组件
     ui->setupUi(this);
 
-    // 连接信号与槽机制
     // 点击 "注册" 按钮时，触发 switchRegister 信号
-    connect(ui->register_Button, &QPushButton::clicked, this, &LoginDialog::switchRegister);
+    connect(ui->reg_btn, &QPushButton::clicked, this, &LoginDialog::switchRegister);
+
+
+    ui->forget_label->SetState("normal","hover","","selected","selected_hover","");
+
+    connect(ui->forget_label, &ClickedLabel::clicked, this, &LoginDialog::slot_forget_pwd);
 }
 
 LoginDialog::~LoginDialog()
 {
+    qDebug()<<"destructLoginDlg";
     delete ui;
+}
+
+void LoginDialog::slot_forget_pwd()
+{
+    qDebug()<<"slot forget pwd";
+    emit switchReset();
 }

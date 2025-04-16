@@ -20,6 +20,7 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "clickedlabel.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -40,7 +41,7 @@ public:
     QLineEdit *password_lineEdit;
     QHBoxLayout *horizontalLayout_3;
     QSpacerItem *horizontalSpacer;
-    QLabel *forgetPassword_label;
+    ClickedLabel *forget_label;
     QSpacerItem *verticalSpacer_2;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer_2;
@@ -48,13 +49,13 @@ public:
     QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer_4;
-    QPushButton *register_Button;
+    QPushButton *reg_btn;
 
     void setupUi(QDialog *LoginDialog)
     {
         if (LoginDialog->objectName().isEmpty())
             LoginDialog->setObjectName("LoginDialog");
-        LoginDialog->resize(350, 500);
+        LoginDialog->resize(354, 538);
         verticalLayout_2 = new QVBoxLayout(LoginDialog);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout = new QVBoxLayout();
@@ -125,13 +126,13 @@ public:
 
         horizontalLayout_3->addItem(horizontalSpacer);
 
-        forgetPassword_label = new QLabel(LoginDialog);
-        forgetPassword_label->setObjectName("forgetPassword_label");
-        forgetPassword_label->setMinimumSize(QSize(0, 25));
-        forgetPassword_label->setMaximumSize(QSize(16777215, 25));
-        forgetPassword_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        forget_label = new ClickedLabel(LoginDialog);
+        forget_label->setObjectName("forget_label");
+        forget_label->setMinimumSize(QSize(0, 25));
+        forget_label->setMaximumSize(QSize(16777215, 25));
+        forget_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
-        horizontalLayout_3->addWidget(forgetPassword_label);
+        horizontalLayout_3->addWidget(forget_label);
 
 
         verticalLayout->addLayout(horizontalLayout_3);
@@ -165,12 +166,12 @@ public:
 
         horizontalLayout_5->addItem(horizontalSpacer_4);
 
-        register_Button = new QPushButton(LoginDialog);
-        register_Button->setObjectName("register_Button");
-        register_Button->setMinimumSize(QSize(40, 20));
-        register_Button->setMaximumSize(QSize(40, 20));
+        reg_btn = new QPushButton(LoginDialog);
+        reg_btn->setObjectName("reg_btn");
+        reg_btn->setMinimumSize(QSize(40, 20));
+        reg_btn->setMaximumSize(QSize(40, 20));
 
-        horizontalLayout_5->addWidget(register_Button);
+        horizontalLayout_5->addWidget(reg_btn);
 
 
         verticalLayout->addLayout(horizontalLayout_5);
@@ -190,9 +191,9 @@ public:
         misaka_label->setText(QString());
         user_label->setText(QCoreApplication::translate("LoginDialog", "\347\224\250\346\210\267\345\220\215\357\274\232", nullptr));
         password_label->setText(QCoreApplication::translate("LoginDialog", "\345\257\206\347\240\201\357\274\232", nullptr));
-        forgetPassword_label->setText(QCoreApplication::translate("LoginDialog", "\345\277\230\350\256\260\345\257\206\347\240\201", nullptr));
+        forget_label->setText(QCoreApplication::translate("LoginDialog", "\345\277\230\350\256\260\345\257\206\347\240\201", nullptr));
         login_Button->setText(QCoreApplication::translate("LoginDialog", "\347\231\273\345\275\225", nullptr));
-        register_Button->setText(QCoreApplication::translate("LoginDialog", "\346\263\250\345\206\214", nullptr));
+        reg_btn->setText(QCoreApplication::translate("LoginDialog", "\346\263\250\345\206\214", nullptr));
     } // retranslateUi
 
 };

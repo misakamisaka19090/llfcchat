@@ -40,6 +40,8 @@ private slots:
 
     void on_sure_btn_clicked();
 
+    void on_log_btn_clicked();
+
     void on_return_btn_clicked();
 
 private:
@@ -73,7 +75,7 @@ private:
     int _countdown;
 
 signals:
-    void sigSwitchLogin();
+    void switchLogin();
 };
 
 #endif // REGISTERDIALOG_H

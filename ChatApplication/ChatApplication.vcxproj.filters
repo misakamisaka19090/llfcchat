@@ -71,6 +71,9 @@
     <ClCompile Include="clickedlabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="resetdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global.h">
@@ -110,6 +113,9 @@
     <QtUic Include="registerdialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="resetdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\misaka.png">
@@ -130,6 +136,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="clickedlabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="resetdialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

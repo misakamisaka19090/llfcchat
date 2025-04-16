@@ -11,11 +11,9 @@ RegisterDialog::RegisterDialog(QWidget *parent)
     ui->pass_edit->setEchoMode(QLineEdit::Password);
     ui->confirm_edit->setEchoMode(QLineEdit::Password);
 
-    // 连接 login_Button 的 clicked 信号到 loginRegister 槽函数，用于处理注册逻辑
-    connect(ui->login_Button, &QPushButton::clicked, this, &RegisterDialog::loginRegister);
-
     // 应用 err_tip 的样式，确保属性变更生效
     repolish(ui->err_tip);
+
     // 连接 HTTP 管理器的注册信号至槽函数
     connect(HttpMgr::GetInstance().get(), &HttpMgr::sig_reg_mod_finish, this, &RegisterDialog::slot_reg_mod_finish);
     // 初始化 HTTP 回调函数
@@ -43,17 +41,11 @@ RegisterDialog::RegisterDialog(QWidget *parent)
         checkVerifyValid();
     });
 
-    //设置浮动显示手形状
-    ui->pass_visible->setCursor(Qt::PointingHandCursor);
-    ui->confirm_visible->setCursor(Qt::PointingHandCursor);
 
-    ui->pass_visible->SetState("unvisible","unvisible_hover","","visible",
-                               "visible_hover","");
+    ui->pass_visible->SetState("unvisible","unvisible_hover","","visible", "visible_hover","");
+    ui->confirm_visible->SetState("unvisible","unvisible_hover","","visible", "visible_hover","");
 
-    ui->confirm_visible->SetState("unvisible","unvisible_hover","","visible",
-                                  "visible_hover","");
     //连接点击事件
-
     connect(ui->pass_visible, &ClickedLabel::clicked, this, [this]() {
         auto state = ui->pass_visible->GetCurState();
         // 设置 password_Edit 和 comfirmPassword_Edit 的显示模式
@@ -82,15 +74,13 @@ RegisterDialog::RegisterDialog(QWidget *parent)
         if(_countdown==0){
             _countdown_timer->stop();
             _countdown = 5;
-            emit sigSwitchLogin();
+            emit switchLogin();
             return;
         }
         _countdown--;
         auto str = QString("注册成功，%1 s后返回登录").arg(_countdown);
         ui->tip_lb->setText(str);
     });
-
-
 }
 
 RegisterDialog::~RegisterDialog()
@@ -189,11 +179,15 @@ void RegisterDialog::on_sure_btn_clicked() {
 }
 
 
+void RegisterDialog::on_log_btn_clicked()
+{
+    emit switchLogin();
+}
 
 void RegisterDialog::on_return_btn_clicked()
 {
     _countdown_timer->stop();
-    emit sigSwitchLogin();
+    emit switchLogin();
 }
 
 

@@ -1,6 +1,9 @@
 #include "MysqlMgr.h"
 
 
+MysqlMgr::MysqlMgr() {
+}
+
 MysqlMgr::~MysqlMgr() {
 
 }
@@ -18,9 +21,6 @@ bool MysqlMgr::UpdatePwd(const std::string& name, const std::string& pwd) {
 	return _dao.UpdatePwd(name, pwd);
 }
 
-MysqlMgr::MysqlMgr() {
-}
-
 bool MysqlMgr::CheckPwd(const std::string& email, const std::string& pwd, UserInfo& userInfo) {
 	return _dao.CheckPwd(email, pwd, userInfo);
 }
@@ -28,5 +28,3 @@ bool MysqlMgr::CheckPwd(const std::string& email, const std::string& pwd, UserIn
 bool MysqlMgr::TestProcedure(const std::string& email, int& uid, std::string& name) {
 	return _dao.TestProcedure(email, uid, name);
 }
-
-

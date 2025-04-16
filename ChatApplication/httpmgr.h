@@ -93,6 +93,9 @@ signals:
      * @param err 错误代码，指示请求是否成功。如果请求失败，返回相应的错误代码。
      */
     void sig_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
+
+    void sig_reset_mod_finish(ReqId id, QString res, ErrorCodes err);
+
 };
 
 #endif // HTTPMGR_H

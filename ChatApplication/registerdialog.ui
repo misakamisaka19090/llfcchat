@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>331</width>
-    <height>477</height>
+    <width>354</width>
+    <height>538</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -514,7 +514,7 @@
   <customwidget>
    <class>TimerBtn</class>
    <extends>QPushButton</extends>
-   <header>timerbtn.h</header>
+   <header location="global">timerbtn.h</header>
   </customwidget>
   <customwidget>
    <class>ClickedLabel</class>
