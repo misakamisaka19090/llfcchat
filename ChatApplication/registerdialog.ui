@@ -482,7 +482,7 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="login_Button">
+            <widget class="QPushButton" name="log_btn">
              <property name="minimumSize">
               <size>
                <width>40</width>
