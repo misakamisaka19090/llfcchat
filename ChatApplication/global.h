@@ -97,4 +97,15 @@ enum ClickLbState{
 extern QString gate_url_prefix;
 
 
+struct ServerInfo{
+    QString Host;
+    QString Port;
+    QString Token;
+    int Uid;
+};
+
+
+const int CHAT_COUNT_PER_PAGE = 13;
+
+
 #endif // GLOBAL_H

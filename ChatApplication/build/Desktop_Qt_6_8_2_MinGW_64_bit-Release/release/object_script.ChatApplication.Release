@@ -6,8 +6,8 @@ release/main.o
 release/mainwindow.o
 release/registerdialog.o
 release/resetdialog.o
-release/resetdialog.o
 release/timerbtn.o
+release/tcpmgr.o
 release/qrc_re.o
 release/moc_clickedlabel.o
 release/moc_httpmgr.o

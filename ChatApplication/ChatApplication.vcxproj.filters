@@ -65,13 +65,22 @@
     <ClCompile Include="registerdialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="timerbtn.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="clickedlabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="resetdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tcpmgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timerbtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usermgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="userdata.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,6 +101,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <ClInclude Include="singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="userdata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -132,13 +144,19 @@
     <ResourceCompile Include=".\ChatApplication_resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="timerbtn.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="clickedlabel.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="resetdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tcpmgr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="timerbtn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="usermgr.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

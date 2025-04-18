@@ -18,8 +18,8 @@ SOURCES += \
     mainwindow.cpp \
     registerdialog.cpp \
     resetdialog.cpp \
-    resetdialog.cpp \
-    timerbtn.cpp
+    timerbtn.cpp \
+    tcpmgr.cpp \
 
 HEADERS += \
     clickedlabel.h \
@@ -29,9 +29,9 @@ HEADERS += \
     mainwindow.h \
     registerdialog.h \
     resetdialog.h \
-    resetdialog.h \
     singleton.h \
-    timerbtn.h
+    timerbtn.h \
+    tcpmgr.h \
 
 FORMS += \
     logindialog.ui \
@@ -39,7 +39,7 @@ FORMS += \
     registerdialog.ui \
     resetdialog.ui
 
-RC_ICONS = misaka.ico
+RC_ICONS = icon.ico
 DESTDIR = ./bin
 
 # Default rules for deployment.

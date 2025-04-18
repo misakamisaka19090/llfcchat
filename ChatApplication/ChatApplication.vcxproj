@@ -211,12 +211,18 @@
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="registerdialog.cpp" />
     <ClCompile Include="resetdialog.cpp" />
+    <ClCompile Include="tcpmgr.cpp" />
     <ClCompile Include="timerbtn.cpp" />
+    <ClCompile Include="userdata.cpp" />
+    <ClCompile Include="usermgr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="userdata.h" />
+    <QtMoc Include="usermgr.h" />
+    <QtMoc Include="timerbtn.h" />
+    <QtMoc Include="tcpmgr.h" />
     <QtMoc Include="clickedlabel.h" />
     <ClInclude Include="global.h" />
-    <QtMoc Include="timerbtn.h" />
     <QtMoc Include="httpmgr.h" />
     <QtMoc Include="logindialog.h" />
     <QtMoc Include="mainwindow.h" />
