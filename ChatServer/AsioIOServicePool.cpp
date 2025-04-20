@@ -3,9 +3,7 @@
 using namespace std;
 
 
-AsioIOServicePool::AsioIOServicePool(std::size_t size)
-	: _ioServices(size), _workGuards(size), _nextIOService(0)
-{
+AsioIOServicePool::AsioIOServicePool(std::size_t size) : _ioServices(size), _workGuards(size), _nextIOService(0) {
 	// 为每个 io_context 创建一个 work guard，防止其 run() 自动返回
 	for (std::size_t i = 0; i < size; ++i) {
 		_workGuards[i] = std::make_unique<WorkGuard>(_ioServices[i].get_executor());
@@ -47,8 +45,8 @@ void AsioIOServicePool::Stop() {
 
 	// 等待线程池中的所有线程退出
 	for (auto& t : _threads) {
-		if (t.joinable()) {
-			t.join();
+		if (t.joinable()) {	//判断线程是否处于可 join 的状态（即线程还在运行）
+			t.join();	//阻塞等待该线程执行完毕
 		}
 	}
 }
