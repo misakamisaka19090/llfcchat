@@ -97,10 +97,10 @@ TcpMgr::TcpMgr() :_host(""), _port(0), _b_recv_pending(false), _message_id(0), _
     initHandlers();
 }
 
-
 TcpMgr::~TcpMgr() {
 
 }
+
 void TcpMgr::initHandlers()
 {
     //auto self = shared_from_this();
@@ -155,8 +155,6 @@ void TcpMgr::initHandlers()
         emit sig_swich_chatdlg();
         });
 
-}
-    /*
     _handlers.insert(ID_SEARCH_USER_RSP, [this](ReqId id, int len, QByteArray data) {
         Q_UNUSED(len);
         qDebug() << "handle id is " << id << " data is " << data;
@@ -401,7 +399,6 @@ void TcpMgr::initHandlers()
         });
 }
 
-*/
 
 void TcpMgr::handleMsg(ReqId id, int len, QByteArray data)
 {

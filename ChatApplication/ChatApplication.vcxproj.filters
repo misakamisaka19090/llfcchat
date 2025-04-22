@@ -83,6 +83,9 @@
     <ClCompile Include="userdata.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="chatdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global.h">
@@ -108,14 +111,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="debug\moc_predefs.h.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="release\moc_predefs.h.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <QtUic Include="logindialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
@@ -126,6 +121,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="resetdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="chatdialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -139,6 +137,7 @@
     <None Include="style\styleSheet.qss">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="llfcchat.pro" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\ChatApplication_resource.rc" />
@@ -157,6 +156,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="usermgr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="chatdialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

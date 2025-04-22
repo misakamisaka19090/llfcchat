@@ -16,31 +16,28 @@ class ClickedLabel : public QLabel
 {
     Q_OBJECT
 public:
-    /**
-     * @brief 构造函数
-     * @param parent 父控件指针
-     */
-    ClickedLabel(QWidget* parent);
+    /// @brief 构造函数
+    explicit ClickedLabel(QWidget* parent = nullptr);
 
-    // 重写鼠标事件处理函数
+    /// @brief 设置六种状态图片路径
+    void SetState(QString normal = "", QString hover = "", QString press = "",
+        QString select = "", QString select_hover = "", QString select_press = "");
+
+    /// @brief 获取当前状态
+    ClickLbState GetCurState();
+
+    /// @brief 设置当前状态
+    bool SetCurState(ClickLbState state);
+
+    /// @brief 重置为普通默认状态
+    void ResetNormalState();
+
+protected:
+    // 鼠标事件重写
     virtual void mousePressEvent(QMouseEvent* ev) override;
+    virtual void mouseReleaseEvent(QMouseEvent* ev) override;
     virtual void enterEvent(QEnterEvent* event) override;
     virtual void leaveEvent(QEvent* event) override;
-
-    /**
-     * @brief 设置六种状态图片路径
-     * @param normal        普通状态默认图片路径（默认空表示不修改）
-     * @param hover         普通悬停状态图片路径
-     * @param press         普通按下状态图片路径
-     * @param select        选中状态默认图片路径
-     * @param select_hover  选中悬停状态图片路径
-     * @param select_press  选中按下状态图片路径
-     */
-    void SetState(QString normal = "", QString hover = "", QString press = "",
-                  QString select = "", QString select_hover = "", QString select_press = "");
-
-    /// @brief 获取当前控件状态
-    ClickLbState GetCurState();
 
 protected:
 private:
@@ -55,8 +52,8 @@ private:
     ClickLbState _curstate;     // 当前状态（枚举类型）
 
 signals:
-    /// @brief 当标签被点击时发出的信号
-    void clicked(void);
+    /// @brief 标签被点击时发出，带名称和状态
+    void clicked(QString name, ClickLbState state);
 };
 
 #endif // CLICKEDLABEL_H
