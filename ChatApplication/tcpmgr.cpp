@@ -3,12 +3,14 @@
 
 TcpMgr::TcpMgr() :_host(""), _port(0), _b_recv_pending(false), _message_id(0), _message_len(0)
 {
+    // 成功连接后发送数据
     QObject::connect(&_socket, &QTcpSocket::connected, [&]() {
         qDebug() << "Connected to server!";
         // 连接建立后发送消息
         emit sig_con_success(true);
         });
 
+    // 服务器返回数据时读取
     QObject::connect(&_socket, &QTcpSocket::readyRead, [&]() {
         // 当有数据可读时，读取所有数据
         // 读取所有数据并追加到缓冲区

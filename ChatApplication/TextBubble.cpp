@@ -9,21 +9,22 @@
 #include <QTextLayout>
 #include <QFont>
 
-TextBubble::TextBubble(ChatRole role, const QString &text, QWidget *parent)
-    :BubbleFrame(role, parent)
+TextBubble::TextBubble(ChatRole role, const QString& text, QWidget* parent)
+    : BubbleFrame(role, parent) // 初始化基类，设置角色和父控件
 {
-    m_pTextEdit = new QTextEdit();
-    m_pTextEdit->setReadOnly(true);
-    m_pTextEdit->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    m_pTextEdit->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    m_pTextEdit->installEventFilter(this);
-    QFont font("Microsoft YaHei");
-    font.setPointSize(12);
-    m_pTextEdit->setFont(font);
-    setPlainText(text);
-    setWidget(m_pTextEdit);
-    initStyleSheet();
+    m_pTextEdit = new QTextEdit(); // 创建文本编辑控件
+    m_pTextEdit->setReadOnly(true); // 设置为只读，用户无法编辑
+    m_pTextEdit->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff); // 隐藏垂直滚动条
+    m_pTextEdit->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff); // 隐藏水平滚动条
+    m_pTextEdit->installEventFilter(this); // 安装事件过滤器，用于动态调整高度
+    QFont font("Microsoft YaHei"); // 设置字体为微软雅黑
+    font.setPointSize(12); // 设置字体大小为12
+    m_pTextEdit->setFont(font); // 应用字体设置
+    setPlainText(text); // 设置文本内容，并计算适当的宽度
+    setWidget(m_pTextEdit); // 将文本编辑控件添加到气泡布局中
+    initStyleSheet(); // 设置控件样式，使背景透明，边框无
 }
+
 
 bool TextBubble::eventFilter(QObject *o, QEvent *e)
 {

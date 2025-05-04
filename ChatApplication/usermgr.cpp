@@ -93,24 +93,31 @@ bool UserMgr::AlreadyApply(int uid)
 }
 
 std::vector<std::shared_ptr<FriendInfo>> UserMgr::GetChatListPerPage() {
-    
+    // 创建一个空的 friend_list 用于存储当前页的聊天用户信息
     std::vector<std::shared_ptr<FriendInfo>> friend_list;
+
+    // 获取当前已加载的聊天用户的起始位置
     int begin = _chat_loaded;
+    // 获取当前页的结束位置
     int end = begin + CHAT_COUNT_PER_PAGE;
 
+    // 如果起始位置已经超出了好友列表的范围，说明没有更多的聊天用户可以加载，直接返回空的 friend_list
     if (begin >= _friend_list.size()) {
         return friend_list;
     }
 
+    // 如果结束位置超出了好友列表的范围，表示这一页只剩下部分好友，可以加载剩余的所有好友
     if (end > _friend_list.size()) {
+        // 将剩余的好友添加到 friend_list 中
         friend_list = std::vector<std::shared_ptr<FriendInfo>>(_friend_list.begin() + begin, _friend_list.end());
         return friend_list;
     }
 
-
-    friend_list = std::vector<std::shared_ptr<FriendInfo>>(_friend_list.begin() + begin, _friend_list.begin()+ end);
+    // 正常情况下，从起始位置到结束位置之间的好友会被添加到 friend_list 中
+    friend_list = std::vector<std::shared_ptr<FriendInfo>>(_friend_list.begin() + begin, _friend_list.begin() + end);
     return friend_list;
 }
+
 
 
 std::vector<std::shared_ptr<FriendInfo>> UserMgr::GetConListPerPage() {

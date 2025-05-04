@@ -20,6 +20,7 @@ protected:
         emit sig_foucus_out();
     }
 private:
+    //限制输入文本的最大字节长度
     void limitTextLength(QString text) {
         if(_max_len <= 0){
             return;

@@ -54,9 +54,9 @@ public:
      * @return std::shared_ptr<T> 单例对象的智能指针
      */
     static std::shared_ptr<T> GetInstance() {
-        // 定义局部的静态变量，多次调用时只初始化一次
+        // 定义局部的静态变量，once_flag保证某一段初始化代码在多个线程中只执行一次。
         static std::once_flag s_flag;
-        std::call_once(s_flag, [&]() {
+        std::call_once(s_flag, [&]() {  //call_once 确保这个 lambda 只执行一次
             // T类型的构造函数是protected或者private的，无法通过make_shared直接创建对象。
             _instance = std::shared_ptr<T>(new T);
         });

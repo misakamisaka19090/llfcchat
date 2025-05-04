@@ -4,12 +4,13 @@
 #include <QDialog>
 #include <QLabel>
 #include <QList>
-#include "statelabel.h"
-#include "global.h"
-#include "statewidget.h"
 #include <memory>
-#include "userdata.h"
 #include <QListWidgetItem>
+
+#include "global.h"
+#include "userdata.h"
+#include "statelabel.h"
+#include "statewidget.h"
 
 namespace Ui {
     class ChatDialog;
