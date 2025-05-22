@@ -322,12 +322,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="llfcchat.pro" />
-    <None Include="res\misaka.png" />
     <QtRcc Include="re.qrc" />
     <None Include="style\styleSheet.qss" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include=".\ChatApplication_resource.rc" />
+    <ResourceCompile Include="build\Desktop_Qt_6_8_2_llvm_mingw_64_bit-Debug\misaka_target_resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />

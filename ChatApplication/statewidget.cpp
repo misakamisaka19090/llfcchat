@@ -14,11 +14,8 @@ StateWidget::StateWidget(QWidget *parent) : QWidget(parent),_curstate(ClickLbSta
 
 void StateWidget::paintEvent(QPaintEvent* event)
 {
-    Q_UNUSED(event);  // 如果你不使用 event，可以避免警告
-
     QStyleOption opt;
-    opt.initFrom(this);  // ✅ Qt6 中使用 initFrom
-
+    opt.initFrom(this);  // Qt 6 推荐用 initFrom 代替 init
     QPainter p(this);
     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
@@ -158,15 +155,12 @@ void StateWidget::AddRedPoint()
     //添加红点示意图
     _red_point = new QLabel();
     _red_point->setObjectName("red_point");
-    _red_point->setAlignment(Qt::AlignCenter);
-    _red_point->setVisible(false); // ✅ 先隐藏，防止显示闪烁
-
     QVBoxLayout* layout2 = new QVBoxLayout;
-    layout2->addWidget(_red_point);
+    _red_point->setAlignment(Qt::AlignCenter);
+    layout2->addWidget(_red_point); 
     layout2->setContentsMargins(0, 0, 0, 0);
-
     this->setLayout(layout2);
-
+    _red_point->setVisible(false);
 }
 
 void StateWidget::ShowRedPoint(bool show)

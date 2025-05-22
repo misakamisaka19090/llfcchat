@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/misaka.png</file>
         <file>style/styleSheet.qss</file>
         <file>res/add_friend.png</file>
         <file>res/add_friend_hover.png</file>
@@ -49,5 +48,6 @@
         <file>res/voice_chat_normal.png</file>
         <file>res/voice_chat_press.png</file>
         <file>res/ice.png</file>
+        <file>res/misaka.jpg</file>
     </qresource>
 </RCC>

@@ -543,40 +543,51 @@ void ChatDialog::SetSelectChatPage(int uid)
 
 }
 
-
-void ChatDialog::ShowSearch(bool bsearch)
-{
-    if(bsearch){
+void ChatDialog::ShowSearch(bool bsearch) {
+    if (bsearch) {  // 如果进入搜索模式：
+        // 隐藏聊天用户列表（主界面上的聊天会话列表）
         ui->chat_user_list->hide();
+        // 隐藏联系人列表（例如好友申请、通讯录等）
         ui->con_user_list->hide();
+        // 显示搜索结果列表（用于展示搜索到的用户或内容）
         ui->search_list->show();
+        // 设置当前界面模式为搜索模式
         _mode = ChatUIMode::SearchMode;
-    }else if(_state == ChatUIMode::ChatMode){
-        ui->chat_user_list->show();
-        ui->con_user_list->hide();
-        ui->search_list->hide();
-        _mode = ChatUIMode::ChatMode;
-        ui->search_list->CloseFindDlg();
-        ui->search_edit->clear();
-        ui->search_edit->clearFocus();
     }
-    else if (_state == ChatUIMode::ContactMode) {
-        // 隐藏聊天用户列表（即主界面上的聊天会话列表）
-        ui->chat_user_list->hide();
-        // 隐藏搜索结果列表（搜索用户后展示的结果）
+    else if (_state == ChatUIMode::ChatMode) {  // 如果当前状态是聊天模式，退出搜索模式时：
+        // 显示聊天用户列表
+        ui->chat_user_list->show();
+        // 隐藏联系人列表
+        ui->con_user_list->hide();
+        // 隐藏搜索结果列表
         ui->search_list->hide();
-        // 显示联系人列表（比如好友申请、通讯录等）
-        ui->con_user_list->show();
-        // 设置当前模式为联系人模式
-        _mode = ChatUIMode::ContactMode;
-        // 关闭搜索结果中弹出的查找窗口（比如“未找到用户”或者“找到用户”的弹框）
+        // 设置当前界面模式为聊天模式
+        _mode = ChatUIMode::ChatMode;
+        // 关闭搜索结果中的查找对话框（例如“未找到用户”或“找到用户”的提示框）
         ui->search_list->CloseFindDlg();
         // 清空搜索输入框的内容
         ui->search_edit->clear();
         // 取消搜索输入框的焦点（即不再高亮或处于可输入状态）
         ui->search_edit->clearFocus();
     }
+    else if (_state == ChatUIMode::ContactMode) {   // 如果当前状态是联系人模式，退出搜索模式时：
+        // 隐藏聊天用户列表
+        ui->chat_user_list->hide();
+        // 隐藏搜索结果列表
+        ui->search_list->hide();
+        // 显示联系人列表
+        ui->con_user_list->show();
+        // 设置当前界面模式为联系人模式
+        _mode = ChatUIMode::ContactMode;
+        // 关闭搜索结果中的查找对话框
+        ui->search_list->CloseFindDlg();
+        // 清空搜索输入框的内容
+        ui->search_edit->clear();
+        // 取消搜索输入框的焦点
+        ui->search_edit->clearFocus();
+    }
 }
+
 
 // 该槽函数用于加载聊天用户
 void ChatDialog::slot_loading_chat_user()

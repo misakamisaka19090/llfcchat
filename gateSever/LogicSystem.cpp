@@ -1,22 +1,10 @@
 #include "LogicSystem.h"
 #include "HttpConnection.h"
-#include "VarifyGrpcClient.h"
-#include "StatusGrpcClient.h"
-
+#include "VerifyGrpcClient.h"
 #include "RedisMgr.h"
 #include "MysqlMgr.h"
+#include "StatusGrpcClient.h"
 
-//处理 HTTP GET 请求的业务逻辑，实现路由注册和请求分发。
-
-void LogicSystem::RegGet(std::string url, HttpHandler handler) {
-	_get_handlers.insert(make_pair(url, handler));
-}
-
-void LogicSystem::RegPost(std::string url, HttpHandler handler) {
-	_post_handlers.insert(make_pair(url, handler));
-}
-
-//注册示例路由 解析并返回请求参数。
 LogicSystem::LogicSystem() {
 	RegGet("/get_test", [](std::shared_ptr<HttpConnection> connection) {
 		beast::ostream(connection->_response.body()) << "receive get_test req " << std::endl;
@@ -24,11 +12,51 @@ LogicSystem::LogicSystem() {
 		for (auto& elem : connection->_get_params) {
 			i++;
 			beast::ostream(connection->_response.body()) << "param" << i << " key is " << elem.first;
-			beast::ostream(connection->_response.body()) << ", " << " value is " << elem.second << std::endl;
+			beast::ostream(connection->_response.body()) << ", " <<  " value is " << elem.second << std::endl;
 		}
-		});
 
-	//获取验证码的处理逻辑
+		connection->_response.set(http::field::content_type, "text/plain");
+	});
+
+	RegPost("/test_procedure", [](std::shared_ptr<HttpConnection> connection) {
+		auto body_str = boost::beast::buffers_to_string(connection->_request.body().data());
+		std::cout << "receive body is " << body_str << std::endl;
+		connection->_response.set(http::field::content_type, "text/json");
+		Json::Value root;
+		Json::Reader reader;
+		Json::Value src_root;
+		bool parse_success = reader.parse(body_str, src_root);
+		if (!parse_success) {
+			std::cout << "Failed to parse JSON data!" << std::endl;
+			root["error"] = ErrorCodes::Error_Json;
+			std::string jsonstr = root.toStyledString();
+			beast::ostream(connection->_response.body()) << jsonstr;
+			return true;
+		}
+
+		if (!src_root.isMember("email")) {
+			std::cout << "Failed to parse JSON data!" << std::endl;
+			root["error"] = ErrorCodes::Error_Json;
+			std::string jsonstr = root.toStyledString();
+			beast::ostream(connection->_response.body()) << jsonstr;
+			return true;
+		}
+
+		auto email = src_root["email"].asString();
+		int uid = 0;
+		std::string name = "";
+		MysqlMgr::GetInstance()->TestProcedure(email, uid, name);
+		cout << "email is " << email << endl;
+		root["error"] = ErrorCodes::Success;
+		root["email"] = src_root["email"];
+		root["name"] = name;
+		root["uid"] = uid;
+		std::string jsonstr = root.toStyledString();
+		beast::ostream(connection->_response.body()) << jsonstr;
+		return true;
+		
+	});
+
 	RegPost("/get_varifycode", [](std::shared_ptr<HttpConnection> connection) {
 		auto body_str = boost::beast::buffers_to_string(connection->_request.body().data());
 		std::cout << "receive body is " << body_str << std::endl;
@@ -37,8 +65,15 @@ LogicSystem::LogicSystem() {
 		Json::Reader reader;
 		Json::Value src_root;
 		bool parse_success = reader.parse(body_str, src_root);
-		//判断是否解析成功
 		if (!parse_success) {
+			std::cout << "Failed to parse JSON data!" << std::endl;
+			root["error"] = ErrorCodes::Error_Json;
+			std::string jsonstr = root.toStyledString();
+			beast::ostream(connection->_response.body()) << jsonstr;
+			return true;
+		}
+
+		if (!src_root.isMember("email")) {
 			std::cout << "Failed to parse JSON data!" << std::endl;
 			root["error"] = ErrorCodes::Error_Json;
 			std::string jsonstr = root.toStyledString();
@@ -48,14 +83,14 @@ LogicSystem::LogicSystem() {
 
 		auto email = src_root["email"].asString();
 		GetVarifyRsp rsp = VerifyGrpcClient::GetInstance()->GetVarifyCode(email);
-		std::cout << "email is " << email << std::endl;
+		cout << "email is " << email << endl;
 		root["error"] = rsp.error();
 		root["email"] = src_root["email"];
 		std::string jsonstr = root.toStyledString();
 		beast::ostream(connection->_response.body()) << jsonstr;
 		return true;
-		});
-
+	});
+	//day11 注册用户逻辑
 	RegPost("/user_register", [](std::shared_ptr<HttpConnection> connection) {
 		auto body_str = boost::beast::buffers_to_string(connection->_request.body().data());
 		std::cout << "receive body is " << body_str << std::endl;
@@ -72,16 +107,23 @@ LogicSystem::LogicSystem() {
 			return true;
 		}
 
-
 		auto email = src_root["email"].asString();
 		auto name = src_root["user"].asString();
 		auto pwd = src_root["passwd"].asString();
 		auto confirm = src_root["confirm"].asString();
 		auto icon = src_root["icon"].asString();
 
+		if (pwd != confirm) {
+			std::cout << "password err " << std::endl;
+			root["error"] = ErrorCodes::PasswdErr;
+			std::string jsonstr = root.toStyledString();
+			beast::ostream(connection->_response.body()) << jsonstr;
+			return true;
+		}
+
 		//先查找redis中email对应的验证码是否合理
 		std::string  varify_code;
-		bool b_get_varify = RedisMgr::GetInstance()->Get(CODEPREFIX + src_root["email"].asString(), varify_code);
+		bool b_get_varify = RedisMgr::GetInstance()->Get(CODEPREFIX+src_root["email"].asString(), varify_code);
 		if (!b_get_varify) {
 			std::cout << " get varify code expired" << std::endl;
 			root["error"] = ErrorCodes::VarifyExpired;
@@ -98,7 +140,6 @@ LogicSystem::LogicSystem() {
 			return true;
 		}
 
-
 		//查找数据库判断用户是否存在
 		int uid = MysqlMgr::GetInstance()->RegUser(name, email, pwd, icon);
 		if (uid == 0 || uid == -1) {
@@ -108,20 +149,18 @@ LogicSystem::LogicSystem() {
 			beast::ostream(connection->_response.body()) << jsonstr;
 			return true;
 		}
-
-
 		root["error"] = 0;
-		root["email"] = email;
 		root["uid"] = uid;
-		root["user"] = name;
+		root["email"] = email;
+		root ["user"]= name;
 		root["passwd"] = pwd;
 		root["confirm"] = confirm;
+		root["icon"] = icon;
 		root["varifycode"] = src_root["varifycode"].asString();
 		std::string jsonstr = root.toStyledString();
 		beast::ostream(connection->_response.body()) << jsonstr;
 		return true;
 		});
-
 
 	//重置回调逻辑
 	RegPost("/reset_pwd", [](std::shared_ptr<HttpConnection> connection) {
@@ -139,9 +178,11 @@ LogicSystem::LogicSystem() {
 			beast::ostream(connection->_response.body()) << jsonstr;
 			return true;
 		}
+
 		auto email = src_root["email"].asString();
 		auto name = src_root["user"].asString();
 		auto pwd = src_root["passwd"].asString();
+
 		//先查找redis中email对应的验证码是否合理
 		std::string  varify_code;
 		bool b_get_varify = RedisMgr::GetInstance()->Get(CODEPREFIX + src_root["email"].asString(), varify_code);
@@ -152,6 +193,7 @@ LogicSystem::LogicSystem() {
 			beast::ostream(connection->_response.body()) << jsonstr;
 			return true;
 		}
+
 		if (varify_code != src_root["varifycode"].asString()) {
 			std::cout << " varify code error" << std::endl;
 			root["error"] = ErrorCodes::VarifyCodeErr;
@@ -168,6 +210,7 @@ LogicSystem::LogicSystem() {
 			beast::ostream(connection->_response.body()) << jsonstr;
 			return true;
 		}
+
 		//更新密码为最新密码
 		bool b_up = MysqlMgr::GetInstance()->UpdatePwd(name, pwd);
 		if (!b_up) {
@@ -177,6 +220,7 @@ LogicSystem::LogicSystem() {
 			beast::ostream(connection->_response.body()) << jsonstr;
 			return true;
 		}
+
 		std::cout << "succeed to update password" << pwd << std::endl;
 		root["error"] = 0;
 		root["email"] = email;
@@ -187,7 +231,6 @@ LogicSystem::LogicSystem() {
 		beast::ostream(connection->_response.body()) << jsonstr;
 		return true;
 		});
-
 
 	//用户登录逻辑
 	RegPost("/user_login", [](std::shared_ptr<HttpConnection> connection) {
@@ -222,7 +265,7 @@ LogicSystem::LogicSystem() {
 		//查询StatusServer找到合适的连接
 		auto reply = StatusGrpcClient::GetInstance()->GetChatServer(userInfo.uid);
 		if (reply.error()) {
-			std::cout << " grpc get chat server failed, error is " << reply.error() << std::endl;
+			std::cout << " grpc get chat server failed, error is " << reply.error()<< std::endl;
 			root["error"] = ErrorCodes::RPCFailed;
 			std::string jsonstr = root.toStyledString();
 			beast::ostream(connection->_response.body()) << jsonstr;
@@ -242,7 +285,17 @@ LogicSystem::LogicSystem() {
 		});
 }
 
+void LogicSystem::RegGet(std::string url, HttpHandler handler) {
+	_get_handlers.insert(make_pair(url, handler));
+}
 
+void LogicSystem::RegPost(std::string url, HttpHandler handler) {
+	_post_handlers.insert(make_pair(url, handler));
+}
+
+LogicSystem::~LogicSystem() {
+
+}
 
 bool LogicSystem::HandleGet(std::string path, std::shared_ptr<HttpConnection> con) {
 	if (_get_handlers.find(path) == _get_handlers.end()) {
@@ -261,4 +314,3 @@ bool LogicSystem::HandlePost(std::string path, std::shared_ptr<HttpConnection> c
 	_post_handlers[path](con);
 	return true;
 }
-

@@ -272,9 +272,6 @@
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\misaka.png">
-      <Filter>Resource Files</Filter>
-    </None>
     <QtRcc Include="re.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
@@ -282,9 +279,6 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="llfcchat.pro" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include=".\ChatApplication_resource.rc" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="clickedlabel.h">
@@ -404,5 +398,8 @@
     <QtMoc Include="PictureBubble.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="build\Desktop_Qt_6_8_2_llvm_mingw_64_bit-Debug\misaka_target_resource.rc" />
   </ItemGroup>
 </Project>

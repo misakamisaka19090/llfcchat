@@ -178,7 +178,7 @@ DISTFILES += \
     res/head_3.jpg \
     res/head_4.jpg \
     res/head_5.jpg \
-    res/misaka.png \
+    res/misaka.jpg \
     res/ice.png \
     res/loading.gif \
     res/male.png \

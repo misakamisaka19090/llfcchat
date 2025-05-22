@@ -11,22 +11,14 @@
 #include "usermgr.h"
 
 
-ApplyFriendPage::ApplyFriendPage(QWidget* parent) :
+ApplyFriendPage::ApplyFriendPage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ApplyFriendPage)
 {
     ui->setupUi(this);
-
-    // 连接 apply_friend_list 中触发的自定义信号 sig_show_search，
-    // 当用户在好友申请列表中点击“搜索”按钮时，会触发此信号
-    // 并将其转发到 ApplyFriendPage 的 sig_show_search 信号
     connect(ui->apply_friend_list, &ApplyFriendList::sig_show_search, this, &ApplyFriendPage::sig_show_search);
-
-    // 加载已有的好友申请列表，包括从 UserMgr 获取的申请记录以及模拟假数据
     loadApplyList();
-
-    // 连接 TcpMgr 单例中发出的 sig_auth_rsp 信号（好友审核结果返回）
-    // 当 TCP 接收到服务器返回的好友验证响应时，触发 slot_auth_rsp 槽函数处理
+    //接受tcp传递的authrsp信号处理
     connect(TcpMgr::GetInstance().get(), &TcpMgr::sig_auth_rsp, this, &ApplyFriendPage::slot_auth_rsp);
 }
 

@@ -1,10 +1,10 @@
 #include "HttpConnection.h"
 #include "LogicSystem.h"
-
 HttpConnection::HttpConnection(boost::asio::io_context& ioc)
 	: _socket(ioc) {
 }
 
+//开启监听该链接的数据接受请求
 void HttpConnection::Start()
 {
 	auto self = shared_from_this();
@@ -17,6 +17,7 @@ void HttpConnection::Start()
 				}
 
 				//处理读到的数据
+
 				boost::ignore_unused(bytes_transferred);
 				self->HandleReq();
 				self->CheckDeadline();
@@ -28,33 +29,13 @@ void HttpConnection::Start()
 	);
 }
 
-tcp::socket& HttpConnection::GetSocket()
-{
-	return _socket;
-}
-
-void HttpConnection::CheckDeadline() {
-	auto self = shared_from_this();
-
-	deadline_.async_wait(
-		[self](beast::error_code ec)
-		{
-			//如果定时器没出错 就关掉计时器。不过有隐患
-			if (!ec)
-			{
-				// Close socket to cancel any outstanding operation.
-				self->_socket.close(ec);
-			}
-		});
-}
-
 //char 转为16进制
 unsigned char ToHex(unsigned char x)
 {
 	return  x > 9 ? x + 55 : x + 48;
 }
 
-//从16进制转为十进制的char的方法
+//16进制转为char
 unsigned char FromHex(unsigned char x)
 {
 	unsigned char y;
@@ -64,7 +45,7 @@ unsigned char FromHex(unsigned char x)
 	else assert(0);
 	return y;
 }
-//url编码工作
+
 std::string UrlEncode(const std::string& str)
 {
 	std::string strTemp = "";
@@ -90,7 +71,7 @@ std::string UrlEncode(const std::string& str)
 	}
 	return strTemp;
 }
-//url解码的工作
+
 std::string UrlDecode(const std::string& str)
 {
 	std::string strTemp = "";
@@ -111,7 +92,7 @@ std::string UrlDecode(const std::string& str)
 	}
 	return strTemp;
 }
-//get请求的参数解析
+
 void HttpConnection::PreParseGetParam() {
 	// 提取 URI  
 	auto uri = _request.target();
@@ -148,27 +129,14 @@ void HttpConnection::PreParseGetParam() {
 	}
 }
 
-void HttpConnection::WriteResponse() {
-	auto self = shared_from_this();
-	_response.content_length(_response.body().size());
-	http::async_write(
-		_socket,
-		_response,
-		[self](beast::error_code ec, std::size_t)
-		{
-			//关掉发送端
-			self->_socket.shutdown(tcp::socket::shutdown_send, ec);
-			//取消定时器
-			self->deadline_.cancel();
-		});
-}
-
+//处理http请求
 void HttpConnection::HandleReq() {
 	//设置版本
 	_response.version(_request.version());
 	//设置为短链接
 	_response.keep_alive(false);
-
+	// 允许所有来源访问（不安全的做法，实际应用中应限制来源）
+	_response.set(boost::beast::http::field::access_control_allow_origin, "*");
 	if (_request.method() == http::verb::get) {
 		PreParseGetParam();
 		bool success = LogicSystem::GetInstance()->HandleGet(_get_url, shared_from_this());
@@ -201,4 +169,35 @@ void HttpConnection::HandleReq() {
 		WriteResponse();
 		return;
 	}
+
 }
+
+void HttpConnection::CheckDeadline() {
+	auto self = shared_from_this();
+
+	deadline_.async_wait(
+		[self](beast::error_code ec)
+		{
+			if (!ec)
+			{
+				// Close socket to cancel any outstanding operation.
+				self->_socket.close(ec);
+			}
+		});
+}
+
+void HttpConnection::WriteResponse() {
+	auto self = shared_from_this();
+
+	_response.content_length(_response.body().size());
+
+	http::async_write(
+		_socket,
+		_response,
+		[self](beast::error_code ec, std::size_t)
+		{
+			self->_socket.shutdown(tcp::socket::shutdown_send, ec);
+			self->deadline_.cancel();
+		});
+}
+
